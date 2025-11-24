@@ -1,0 +1,203 @@
+# midi
+
+The Human brain can be seen as grey matter and white matter. The former
+is composed of cell bodies and dendrites, while the latter is composed
+of axons and glial cells. Neurons are made up of a cell body, dendrites,
+and an axon. The cell body contains the nucleus and other organelles,
+and the dendrites receive electrical signals from other neurons. The
+axon is a long, thin projection that carries signals away from the cell
+body to other neurons. The axons are surrounded by a myelin sheath,
+which is a fatty substance that insulates the axons and speeds up the
+transmission of electrical signals. The myelin sheath is not continuous,
+but rather has small gaps called nodes of Ranvier. The axons are bundled
+together in what is called a fiber bundle. The glial cells are
+responsible for maintaining the homeostasis of the brain and providing
+support and protection for the axons.
+
+The scale of these tissues (of the order of micrometers) makes them
+invisible to the naked eye. However, a robust reconstruction of the
+brain microstructure is key to understanding brain function and
+dysfunction. This is where diffusion magnetic resonance imaging (MRI)
+comes in. Water molcules are in constant random motion due to their
+thermal energy and our body is made of 80% of water. The diffusion of
+water molecules in the brain is restricted by the cell membranes and
+myelin sheaths, and is faster along the axons than perpendicular to
+them. This anisotropic diffusion can be measured using diffusion MRI.
+Diffusion MRI is a non-invasive imaging technique which makes the
+magnetization of protons sensitive to the diffusion by applying
+so-called magnetic field diffusion gradients. The signal attenuation in
+diffusion MRI is then used to infer the microstructure of the brain.
+
+An enormous amount of research has been done to understand the
+relationship between the signal attenuation and the microstructure of
+the brain and many parametric models have been devised to describe this
+relationship. However, the spatial resolution of diffusion MRI is
+limited by the voxel size, which is typically in the order of
+millimeters, therefore containing many different tissue types. In
+addition, depending on the experimental conditions (number, duration and
+strength of the gradients and time between two consecutive gradients),
+the MR signal might not be sensitive to all tissue types in the voxel.
+The [**midi**](https://lmjl-alea.github.io/midi/) package is meant to
+list the tissue models that have been proposed in the literature and to
+provide tools to simulate the MR signal attenuation predicted by these
+models under different experimental conditions.
+
+The package is then used in an eponymous Shiny web application which
+provides a user-friendly interface for the package and allows to
+interactively visualize the MR signal attenuation induced by the
+different tissue models and design experimental conditions to optimize
+the sensitivity to specific tissue parameters. The Shiny web application
+can be launched with the
+[`midi::run_app()`](https://lmjl-alea.github.io/midi/reference/run_app.md)
+function for convenience but can be directly accessed at the following
+URL: <https://midi-pastrami.apps.math.cnrs.fr/>.
+
+## Installation
+
+You can install the released version of midi from
+[CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("midi")
+```
+
+You can install the development version of midi from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("lmjl-alea/midi")
+```
+
+## Example
+
+We can instantiate a cylinder compartment as follows:
+
+``` r
+library(midi)
+restrComp <- VanGelderenCompartment$new(
+  radius = 0.5, # um
+  diffusivity = 3 # um^2/ms
+)
+cylComp <- CylinderCompartment$new(
+  axis = c(0, 0, 1),
+  restricted_compartment = restrComp
+)
+```
+
+Note that the instantiation of the compartment requires the
+specification of the cylinder axis, radius and diffusivity, which are
+only the parameters related to the cylinder geometry. The radius and
+diffusivity are in fact the parameters of the restricted compartment,
+which is first instantiated and then passed to the cylinder compartment.
+Several other restricted compartments are available in the package.
+
+Once instantiated, the compartment object can be used to access the list
+of its parameters:
+
+``` r
+cylComp$get_parameters()
+#> $CylinderAxis
+#> [1] 0 0 1
+#> 
+#> $CylinderRadius
+#> [1] 0.5
+#> 
+#> $CylinderDiffusivity
+#> [1] 3
+```
+
+The parameters related to the experimental conditions are specified when
+calling the `get_signal` method which computes the signal attenuation
+for the compartment. In this example, we consider the following
+experimental conditions:
+
+``` r
+cylComp$get_signal(
+  small_delta = 30, # ms
+  big_delta = 30, # ms
+  G = 0.040, # uT/um
+  direction = c(0, 0, 1)
+)
+#> [1] 0.002055938
+```
+
+We can also simulate and visualize cylinder bundles:
+
+``` r
+density <- 0.7
+voxel_size <- 5 # um
+out <- simulate_bundle(density, voxel_size)
+plot(out)
+```
+
+![](reference/figures/README-unnamed-chunk-5-1.png)
+
+A 3D visualization of the cylinder bundle powered by the
+[**plotly**](https://plotly.com/r/) package can be obtained by calling
+[`plot3d()`](https://lmjl-alea.github.io/midi/reference/plot3d.md). See
+the documentation online at
+<https://lmjl-alea.github.io/midi/reference/plot3d.html> for more
+details.
+
+# Package index
+
+## Cylinder bundle simulation
+
+- [`simulate_bundle()`](https://lmjl-alea.github.io/midi/reference/simulate_bundle.md)
+  : Generates a cross section of a cylinder bundle
+
+- [`autoplot(`*`<bundle>`*`)`](https://lmjl-alea.github.io/midi/reference/autoplot.bundle.md)
+  :
+
+  Plots a cross section of a cylinder bundle using **ggplot2**
+
+- [`plot(`*`<bundle>`*`)`](https://lmjl-alea.github.io/midi/reference/plot.bundle.md)
+  : Plots a cross section of a cylinder bundle
+
+- [`plot3d()`](https://lmjl-alea.github.io/midi/reference/plot3d.md) :
+
+  Plots a 3D representation of a cylinder bundle using **plotly**
+
+## MR signal prediction
+
+### Models for restricted diffusion in circularly-shaped media
+
+- [`CallaghanCompartment`](https://lmjl-alea.github.io/midi/reference/CallaghanCompartment.md)
+  : Callaghan's model for restricted diffusion in a cylinder
+- [`NeumanCompartment`](https://lmjl-alea.github.io/midi/reference/NeumanCompartment.md)
+  : Neuman's model for restricted diffusion in a cylinder
+- [`SodermanCompartment`](https://lmjl-alea.github.io/midi/reference/SodermanCompartment.md)
+  : Soderman's model for restricted diffusion in a cylinder
+- [`StaniszCompartment`](https://lmjl-alea.github.io/midi/reference/StaniszCompartment.md)
+  : Stanisz's model for restricted diffusion in a cylinder
+- [`VanGelderenCompartment`](https://lmjl-alea.github.io/midi/reference/VanGelderenCompartment.md)
+  : Van Gelderen's model for restricted diffusion in a cylinder
+
+### Models for diffusion MRI
+
+- [`FreeCompartment`](https://lmjl-alea.github.io/midi/reference/FreeCompartment.md)
+  : Free compartment class
+- [`SphereCompartment`](https://lmjl-alea.github.io/midi/reference/SphereCompartment.md)
+  : Sphere compartment class
+- [`CylinderCompartment`](https://lmjl-alea.github.io/midi/reference/CylinderCompartment.md)
+  : Cylinder compartment class
+- [`CylinderBundleCompartment`](https://lmjl-alea.github.io/midi/reference/CylinderBundleCompartment.md)
+  : Cylinder bundle compartment class
+
+## Statistical distributions
+
+- [`GammaDistribution`](https://lmjl-alea.github.io/midi/reference/GammaDistribution.md)
+  : Gamma distribution class
+- [`WatsonDistribution`](https://lmjl-alea.github.io/midi/reference/WatsonDistribution.md)
+  : Watson distribution class
+
+## Utility functions
+
+- [`bvalue()`](https://lmjl-alea.github.io/midi/reference/bvalue.md) :
+  B-Value Calculation
+- [`rcylinders()`](https://lmjl-alea.github.io/midi/reference/rcylinders.md)
+  : Sample cylinder compartments
+- [`run_app()`](https://lmjl-alea.github.io/midi/reference/run_app.md) :
+  Runs the MIDI Shiny web application
+

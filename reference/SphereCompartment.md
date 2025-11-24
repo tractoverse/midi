@@ -1,0 +1,80 @@
+# Sphere compartment class
+
+A class to model restricted diffusion in a sphere.
+
+## Super classes
+
+[`midi::BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
+-\>
+[`midi::CircularlyShapedCompartment`](https://lmjl-alea.github.io/midi/reference/CircularlyShapedCompartment.md)
+-\> `SphereCompartment`
+
+## Methods
+
+### Public methods
+
+- [`SphereCompartment$new()`](#method-SphereCompartment-new)
+
+- [`SphereCompartment$clone()`](#method-SphereCompartment-clone)
+
+Inherited methods
+
+- [`midi::BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
+- [`midi::BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
+- [`midi::BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
+
+------------------------------------------------------------------------
+
+### Method `new()`
+
+Instantiates a new sphere compartment.
+
+#### Usage
+
+    SphereCompartment$new(restricted_compartment = VanGelderenCompartment$new())
+
+#### Arguments
+
+- `restricted_compartment`:
+
+  An instance of the
+  [`CircularlyShapedCompartment`](https://lmjl-alea.github.io/midi/reference/CircularlyShapedCompartment.md)
+  class specifying the restricted compartment within the sphere.
+  Defaults to a Van Gelderen compartment.
+
+#### Returns
+
+An instance of the `SphereCompartment` class.
+
+------------------------------------------------------------------------
+
+### Method `clone()`
+
+The objects of this class are cloneable with this method.
+
+#### Usage
+
+    SphereCompartment$clone(deep = FALSE)
+
+#### Arguments
+
+- `deep`:
+
+  Whether to make a deep clone.
+
+## Examples
+
+``` r
+sphComp <- SphereCompartment$new()
+sphComp$get_signal(small_delta = 30, big_delta = 30, G = 0.040)
+#> [1] 0.1205943
+sphComp$get_parameter_names()
+#> [1] "SphereRadius"      "SphereDiffusivity"
+sphComp$get_parameters()
+#> $SphereRadius
+#> [1] 15
+#> 
+#> $SphereDiffusivity
+#> [1] 3
+#> 
+```
