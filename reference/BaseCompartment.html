@@ -49,13 +49,12 @@
 
 <div class="section">
 <h3 id="public-methods">Public methods<a class="anchor" aria-label="anchor" href="#public-methods"></a></h3>
-
-<ul><li><p><a href="#method-BaseCompartment-get_signal"><code>BaseCompartment$get_signal()</code></a></p></li>
+<p></p><ul><li><p><a href="#method-BaseCompartment-get_signal"><code>BaseCompartment$get_signal()</code></a></p></li>
 <li><p><a href="#method-BaseCompartment-get_parameter_names"><code>BaseCompartment$get_parameter_names()</code></a></p></li>
 <li><p><a href="#method-BaseCompartment-get_parameters"><code>BaseCompartment$get_parameters()</code></a></p></li>
 <li><p><a href="#method-BaseCompartment-clone"><code>BaseCompartment$clone()</code></a></p></li>
 </ul></div><p></p><hr><a id="method-BaseCompartment-get_signal"></a><div class="section">
-<h3 id="method-get-signal-">Method <code>get_signal()</code><a class="anchor" aria-label="anchor" href="#method-get-signal-"></a></h3>
+<h3 id="basecompartment-get-signal-"><code>BaseCompartment$get_signal()</code><a class="anchor" aria-label="anchor" href="#basecompartment-get-signal-"></a></h3>
 <p>Computes the signal attenuation predicted by the model.</p><div class="section">
 <h4 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">BaseCompartment</span><span class="op">$</span><span class="fu">get_signal</span><span class="op">(</span></span>
@@ -67,52 +66,42 @@
 <span>  n_max <span class="op">=</span> <span class="fl">20L</span>,</span>
 <span>  m_max <span class="op">=</span> <span class="fl">50L</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>small_delta</code></dt>
 <dd><p>A numeric value specifying the duration of the
 gradient pulse in milliseconds.</p></dd>
 
-
-<dt><code>big_delta</code></dt>
+      <dt><code>big_delta</code></dt>
 <dd><p>A numeric value specifying the duration between the
 gradient pulses in milliseconds.</p></dd>
 
-
-<dt><code>G</code></dt>
+      <dt><code>G</code></dt>
 <dd><p>A numeric value specifying the strength of the gradient in
 mT.\(\mu\)m\(^{-1}\).</p></dd>
 
-
-<dt><code>direction</code></dt>
+      <dt><code>direction</code></dt>
 <dd><p>A numeric vector specifying the direction of the
 gradient. Defaults to <code>c(0, 0, 1)</code>.</p></dd>
 
-
-<dt><code>echo_time</code></dt>
+      <dt><code>echo_time</code></dt>
 <dd><p>A numeric value specifying the echo time in
 milliseconds.</p></dd>
 
-
-<dt><code>n_max</code></dt>
+      <dt><code>n_max</code></dt>
 <dd><p>An integer value specifying the maximum order of the Bessel
 function. Defaults to <code>20L</code>.</p></dd>
 
-
-<dt><code>m_max</code></dt>
+      <dt><code>m_max</code></dt>
 <dd><p>An integer value specifying the maximum number of extrema
 for the Bessel function. Defaults to <code>50L</code>.</p></dd>
 
 
 </dl><p></p></div>
-</div>
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="returns">Returns<a class="anchor" aria-label="anchor" href="#returns"></a></h4>
 <p>A numeric value storing the predicted signal attenuation.</p>
-</div>
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a></h4>
 <p></p><div class="r example copy"><div class="sourceCode"><pre><code><span><span class="va">freeComp</span> <span class="op">&lt;-</span> <span class="va"><a href="../reference/FreeCompartment.html">FreeCompartment</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="va">freeComp</span><span class="op">$</span><span class="fu">get_signal</span><span class="op">(</span>small_delta <span class="op">=</span> <span class="fl">30</span>, big_delta <span class="op">=</span> <span class="fl">30</span>, G <span class="op">=</span> <span class="fl">0.040</span><span class="op">)</span></span>
@@ -139,53 +128,48 @@ for the Bessel function. Defaults to <code>50L</code>.</p></dd>
 <span><span class="va">vanGelderenComp</span><span class="op">$</span><span class="fu">get_signal</span><span class="op">(</span>small_delta <span class="op">=</span> <span class="fl">30</span>, big_delta <span class="op">=</span> <span class="fl">30</span>, G <span class="op">=</span> <span class="fl">0.040</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
+</div>
 
-</div><p></p><hr><a id="method-BaseCompartment-get_parameter_names"></a><div class="section">
-<h3 id="method-get-parameter-names-">Method <code>get_parameter_names()</code><a class="anchor" aria-label="anchor" href="#method-get-parameter-names-"></a></h3>
+<p></p><hr><a id="method-BaseCompartment-get_parameter_names"></a><div class="section">
+<h3 id="basecompartment-get-parameter-names-"><code>BaseCompartment$get_parameter_names()</code><a class="anchor" aria-label="anchor" href="#basecompartment-get-parameter-names-"></a></h3>
 <p>Returns the names of the compartment parameters</p><div class="section">
 <h4 id="usage-1">Usage<a class="anchor" aria-label="anchor" href="#usage-1"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">BaseCompartment</span><span class="op">$</span><span class="fu">get_parameter_names</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="returns-1">Returns<a class="anchor" aria-label="anchor" href="#returns-1"></a></h4>
 <p>A character vector storing the names of the compartment
 parameters.</p>
-</div>
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="examples-1">Examples<a class="anchor" aria-label="anchor" href="#examples-1"></a></h4>
 <p></p><div class="r example copy"><div class="sourceCode"><pre><code><span><span class="va">freeComp</span> <span class="op">&lt;-</span> <span class="va"><a href="../reference/FreeCompartment.html">FreeCompartment</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="va">freeComp</span><span class="op">$</span><span class="fu">get_parameter_names</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
+</div>
 
-</div><p></p><hr><a id="method-BaseCompartment-get_parameters"></a><div class="section">
-<h3 id="method-get-parameters-">Method <code>get_parameters()</code><a class="anchor" aria-label="anchor" href="#method-get-parameters-"></a></h3>
+<p></p><hr><a id="method-BaseCompartment-get_parameters"></a><div class="section">
+<h3 id="basecompartment-get-parameters-"><code>BaseCompartment$get_parameters()</code><a class="anchor" aria-label="anchor" href="#basecompartment-get-parameters-"></a></h3>
 <p>Returns the values of the compartment parameters</p><div class="section">
 <h4 id="usage-2">Usage<a class="anchor" aria-label="anchor" href="#usage-2"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">BaseCompartment</span><span class="op">$</span><span class="fu">get_parameters</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="returns-2">Returns<a class="anchor" aria-label="anchor" href="#returns-2"></a></h4>
 <p>A numeric vector storing the values of the compartment
 parameters.</p>
-</div>
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="examples-2">Examples<a class="anchor" aria-label="anchor" href="#examples-2"></a></h4>
 <p></p><div class="r example copy"><div class="sourceCode"><pre><code><span><span class="va">freeComp</span> <span class="op">&lt;-</span> <span class="va"><a href="../reference/FreeCompartment.html">FreeCompartment</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="va">freeComp</span><span class="op">$</span><span class="fu">get_parameters</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
 </div>
 
+</div>
 
-</div><p></p><hr><a id="method-BaseCompartment-clone"></a><div class="section">
-<h3 id="method-clone-">Method <code>clone()</code><a class="anchor" aria-label="anchor" href="#method-clone-"></a></h3>
+<p></p><hr><a id="method-BaseCompartment-clone"></a><div class="section">
+<h3 id="basecompartment-clone-"><code>BaseCompartment$clone()</code><a class="anchor" aria-label="anchor" href="#basecompartment-clone-"></a></h3>
 <p>The objects of this class are cloneable with this method.</p><div class="section">
 <h4 id="usage-3">Usage<a class="anchor" aria-label="anchor" href="#usage-3"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">BaseCompartment</span><span class="op">$</span><span class="fu">clone</span><span class="op">(</span>deep <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="arguments-1">Arguments<a class="anchor" aria-label="anchor" href="#arguments-1"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>deep</code></dt>
 <dd><p>Whether to make a deep clone.</p></dd>
@@ -196,13 +180,14 @@ parameters.</p>
 
 </div>
 
+
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">## ------------------------------------------------</span></span></span>
-<span class="r-in"><span><span class="co">## Method `BaseCompartment$get_signal`</span></span></span>
+<span class="r-in"><span><span class="co">## Method `BaseCompartment$get_signal()`</span></span></span>
 <span class="r-in"><span><span class="co">## ------------------------------------------------</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">freeComp</span> <span class="op">&lt;-</span> <span class="va"><a href="FreeCompartment.html">FreeCompartment</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span><span class="op">)</span></span></span>
@@ -237,7 +222,7 @@ parameters.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.1205943</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">## ------------------------------------------------</span></span></span>
-<span class="r-in"><span><span class="co">## Method `BaseCompartment$get_parameter_names`</span></span></span>
+<span class="r-in"><span><span class="co">## Method `BaseCompartment$get_parameter_names()`</span></span></span>
 <span class="r-in"><span><span class="co">## ------------------------------------------------</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">freeComp</span> <span class="op">&lt;-</span> <span class="va"><a href="FreeCompartment.html">FreeCompartment</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span><span class="op">)</span></span></span>
@@ -245,7 +230,7 @@ parameters.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "FreeDiffusivity"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">## ------------------------------------------------</span></span></span>
-<span class="r-in"><span><span class="co">## Method `BaseCompartment$get_parameters`</span></span></span>
+<span class="r-in"><span><span class="co">## Method `BaseCompartment$get_parameters()`</span></span></span>
 <span class="r-in"><span><span class="co">## ------------------------------------------------</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">freeComp</span> <span class="op">&lt;-</span> <span class="va"><a href="FreeCompartment.html">FreeCompartment</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span><span class="op">)</span></span></span>

@@ -4,28 +4,28 @@ A class to model restricted diffusion in a sphere.
 
 ## Super classes
 
-[`midi::BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
+[`BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
 -\>
-[`midi::CircularlyShapedCompartment`](https://lmjl-alea.github.io/midi/reference/CircularlyShapedCompartment.md)
+[`CircularlyShapedCompartment`](https://lmjl-alea.github.io/midi/reference/CircularlyShapedCompartment.md)
 -\> `SphereCompartment`
 
 ## Methods
 
 ### Public methods
 
-- [`SphereCompartment$new()`](#method-SphereCompartment-new)
+- [`SphereCompartment$new()`](#method-SphereCompartment-initialize)
 
 - [`SphereCompartment$clone()`](#method-SphereCompartment-clone)
 
 Inherited methods
 
-- [`midi::BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
-- [`midi::BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
-- [`midi::BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
+- [`BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
+- [`BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
+- [`BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
 
 ------------------------------------------------------------------------
 
-### Method `new()`
+### `SphereCompartment$new()`
 
 Instantiates a new sphere compartment.
 
@@ -48,7 +48,7 @@ An instance of the `SphereCompartment` class.
 
 ------------------------------------------------------------------------
 
-### Method `clone()`
+### `SphereCompartment$clone()`
 
 The objects of this class are cloneable with this method.
 

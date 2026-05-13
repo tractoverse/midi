@@ -34,3 +34,8 @@ Useful links:
 
 **Maintainer**: Aymeric Stamm <aymeric.stamm@cnrs.fr>
 ([ORCID](https://orcid.org/0000-0002-8725-3654))
+
+Authors:
+
+- Aymeric Stamm <aymeric.stamm@cnrs.fr>
+  ([ORCID](https://orcid.org/0000-0002-8725-3654))

@@ -46,21 +46,20 @@
 
     <div class="section level2">
     <h2 id="super-class">Super class<a class="anchor" aria-label="anchor" href="#super-class"></a></h2>
-    <p><code><a href="BaseCompartment.html">midi::BaseCompartment</a></code> -&gt; <code>CylinderBundleCompartment</code></p>
+    <p><code><a href="BaseCompartment.html">BaseCompartment</a></code> -&gt; <code>CylinderBundleCompartment</code></p>
     </div>
     <div class="section level2">
     <h2 id="methods">Methods<a class="anchor" aria-label="anchor" href="#methods"></a></h2>
 
 <div class="section">
 <h3 id="public-methods">Public methods<a class="anchor" aria-label="anchor" href="#public-methods"></a></h3>
-
-<ul><li><p><a href="#method-CylinderBundleCompartment-new"><code>CylinderBundleCompartment$new()</code></a></p></li>
+<p></p><ul><li><p><a href="#method-CylinderBundleCompartment-initialize"><code>CylinderBundleCompartment$new()</code></a></p></li>
 <li><p><a href="#method-CylinderBundleCompartment-clone"><code>CylinderBundleCompartment$clone()</code></a></p></li>
-</ul></div><p><details open><summary>Inherited methods</summary><ul><li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href="BaseCompartment.html#method-get_parameter_names"><code>midi::BaseCompartment$get_parameter_names()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href="BaseCompartment.html#method-get_parameters"><code>midi::BaseCompartment$get_parameters()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href="BaseCompartment.html#method-get_signal"><code>midi::BaseCompartment$get_signal()</code></a></span></li>
-</ul></details></p><hr><a id="method-CylinderBundleCompartment-new"></a><div class="section">
-<h3 id="method-new-">Method <code>new()</code><a class="anchor" aria-label="anchor" href="#method-new-"></a></h3>
+</ul></div><p><details open><summary>Inherited methods</summary><ul><li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href="BaseCompartment.html#method-get_parameter_names"><code>BaseCompartment$get_parameter_names()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href="BaseCompartment.html#method-get_parameters"><code>BaseCompartment$get_parameters()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href="BaseCompartment.html#method-get_signal"><code>BaseCompartment$get_signal()</code></a></span></li>
+</ul></details></p><hr><a id="method-CylinderBundleCompartment-initialize"></a><div class="section">
+<h3 id="cylinderbundlecompartment-new-"><code>CylinderBundleCompartment$new()</code><a class="anchor" aria-label="anchor" href="#cylinderbundlecompartment-new-"></a></h3>
 <p>Instantiates a new cylinder bundle compartment.</p><div class="section">
 <h4 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va"><a href="../reference/CylinderBundleCompartment.html">CylinderBundleCompartment</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span></span>
@@ -69,22 +68,18 @@
 <span>  axial_diffusivity <span class="op">=</span> <span class="cn">NULL</span>,</span>
 <span>  radial_diffusivity <span class="op">=</span> <span class="cn">NULL</span></span>
 <span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>cylinder_density</code></dt>
 <dd><p>A numeric value specifying the density of the
 cylinders in the voxel. Must be between 0 and 1.</p></dd>
 
-
-<dt><code>cylinder_compartments</code></dt>
+      <dt><code>cylinder_compartments</code></dt>
 <dd><p>A list of instances of the
 <code><a href="CylinderCompartment.html">CylinderCompartment</a></code> class specifying the compartments within the
 bundle.</p></dd>
 
-
-<dt><code>axial_diffusivity</code></dt>
+      <dt><code>axial_diffusivity</code></dt>
 <dd><p>A numeric value specifying the axial diffusivity
 in the space outside the cylinders in m\(^2\).s\(^{-1}\). If not
 provided, defaults to a tortuosity model reducing the intrinsic
@@ -92,8 +87,7 @@ diffusivity depending on orientation dispersion. Defaults to <code>NULL</code> i
 which case the extracellular axial diffusivity is set via a tortuosity
 model based on the dispersion in orientation.</p></dd>
 
-
-<dt><code>radial_diffusivity</code></dt>
+      <dt><code>radial_diffusivity</code></dt>
 <dd><p>A numeric value specifying the radial
 diffusivity in the space outside the cylinders in
 m\(^2\).s\(^{-1}\). Defaults to <code>NULL</code> in which case the
@@ -102,20 +96,19 @@ the intracellular density.</p></dd>
 
 
 </dl><p></p></div>
-</div>
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="returns">Returns<a class="anchor" aria-label="anchor" href="#returns"></a></h4>
 <p>An instance of the <code>CylinderBundleCompartment</code> class.</p>
 </div>
 
-</div><p></p><hr><a id="method-CylinderBundleCompartment-clone"></a><div class="section">
-<h3 id="method-clone-">Method <code>clone()</code><a class="anchor" aria-label="anchor" href="#method-clone-"></a></h3>
+</div>
+
+<p></p><hr><a id="method-CylinderBundleCompartment-clone"></a><div class="section">
+<h3 id="cylinderbundlecompartment-clone-"><code>CylinderBundleCompartment$clone()</code><a class="anchor" aria-label="anchor" href="#cylinderbundlecompartment-clone-"></a></h3>
 <p>The objects of this class are cloneable with this method.</p><div class="section">
 <h4 id="usage-1">Usage<a class="anchor" aria-label="anchor" href="#usage-1"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">CylinderBundleCompartment</span><span class="op">$</span><span class="fu">clone</span><span class="op">(</span>deep <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="arguments-1">Arguments<a class="anchor" aria-label="anchor" href="#arguments-1"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>deep</code></dt>
 <dd><p>Whether to make a deep clone.</p></dd>
@@ -125,6 +118,7 @@ the intracellular density.</p></dd>
 </div>
 
 </div>
+
 
     </div>
 

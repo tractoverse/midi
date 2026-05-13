@@ -108,14 +108,14 @@
 <span>  G <span class="op">=</span> <span class="fl">0.040</span>, <span class="co"># uT/um</span></span>
 <span>  direction <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">1</span><span class="op">)</span></span>
 <span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] 0.002055938</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] 0.002063224</span></span></code></pre></div>
 <p>We can also simulate and visualize cylinder bundles:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">density</span> <span class="op">&lt;-</span> <span class="fl">0.7</span></span>
 <span><span class="va">voxel_size</span> <span class="op">&lt;-</span> <span class="fl">5</span> <span class="co"># um</span></span>
 <span><span class="va">out</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/simulate_bundle.html">simulate_bundle</a></span><span class="op">(</span><span class="va">density</span>, <span class="va">voxel_size</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">out</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-5-1.png" width="100%"></p>
+<p><img src="reference/figures/README-unnamed-chunk-5-1.png" alt="" width="100%"></p>
 <p>A 3D visualization of the cylinder bundle powered by the <a href="https://plotly.com/r/" class="external-link"><strong>plotly</strong></a> package can be obtained by calling <code><a href="reference/plot3d.html">plot3d()</a></code>. See the documentation online at <a href="https://lmjl-alea.github.io/midi/reference/plot3d.html" class="uri">https://lmjl-alea.github.io/midi/reference/plot3d.html</a> for more details.</p>
 </div>
 </div>
@@ -155,9 +155,8 @@
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/LMJL-Alea/midi/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/LMJL-Alea/midi/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://app.codecov.io/gh/lmjl-alea/midi?branch=main" class="external-link"><img src="https://codecov.io/gh/lmjl-alea/midi/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
-<li><a href="https://github.com/lmjl-alea/midi/actions/workflows/test-coverage.yaml" class="external-link"><img src="https://github.com/lmjl-alea/midi/actions/workflows/test-coverage.yaml/badge.svg" alt="test-coverage"></a></li>
-<li><a href="https://github.com/lmjl-alea/midi/actions/workflows/pkgdown.yaml" class="external-link"><img src="https://github.com/lmjl-alea/midi/actions/workflows/pkgdown.yaml/badge.svg" alt="pkgdown"></a></li>
+<li><a href="https://app.codecov.io/gh/LMJL-Alea/midi" class="external-link"><img src="https://codecov.io/gh/LMJL-Alea/midi/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://github.com/LMJL-Alea/midi/actions/workflows/pkgdown.yaml" class="external-link"><img src="https://github.com/LMJL-Alea/midi/actions/workflows/pkgdown.yaml/badge.svg" alt="pkgdown"></a></li>
 <li><a href="https://CRAN.R-project.org/package=midi" class="external-link"><img src="https://www.r-pkg.org/badges/version/midi" alt="CRAN status"></a></li>
 </ul>
 </div>

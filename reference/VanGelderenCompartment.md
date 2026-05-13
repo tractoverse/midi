@@ -12,9 +12,9 @@ in rabbit leg muscle. Journal of Magnetic Resonance, Series B, 103(3),
 
 ## Super classes
 
-[`midi::BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
+[`BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
 -\>
-[`midi::CircularlyShapedCompartment`](https://lmjl-alea.github.io/midi/reference/CircularlyShapedCompartment.md)
+[`CircularlyShapedCompartment`](https://lmjl-alea.github.io/midi/reference/CircularlyShapedCompartment.md)
 -\> `VanGelderenCompartment`
 
 ## Methods
@@ -25,14 +25,14 @@ in rabbit leg muscle. Journal of Magnetic Resonance, Series B, 103(3),
 
 Inherited methods
 
-- [`midi::BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
-- [`midi::BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
-- [`midi::BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
-- [`midi::CircularlyShapedCompartment$initialize()`](https://lmjl-alea.github.io/midi/reference/CircularlyShapedCompartment.html#method-initialize)
+- [`BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
+- [`BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
+- [`BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
+- [`CircularlyShapedCompartment$initialize()`](https://lmjl-alea.github.io/midi/reference/CircularlyShapedCompartment.html#method-initialize)
 
 ------------------------------------------------------------------------
 
-### Method `clone()`
+### `VanGelderenCompartment$clone()`
 
 The objects of this class are cloneable with this method.
 

@@ -20,7 +20,7 @@ distribution to data and generating random samples.
 
 ------------------------------------------------------------------------
 
-### Method `fit()`
+### `BaseDistribution$fit()`
 
 Fit the distribution to the data.
 
@@ -40,7 +40,7 @@ Internally sets the parameters of the distribution. Returns nothing.
 
 ------------------------------------------------------------------------
 
-### Method `random()`
+### `BaseDistribution$random()`
 
 Generate random samples from the distribution.
 
@@ -60,7 +60,7 @@ A numeric vector of size `n` containing the random samples.
 
 ------------------------------------------------------------------------
 
-### Method `get_mean()`
+### `BaseDistribution$get_mean()`
 
 Compute the mean of the distribution.
 
@@ -74,7 +74,7 @@ A numeric value storing the mean of the distribution.
 
 ------------------------------------------------------------------------
 
-### Method `get_variance()`
+### `BaseDistribution$get_variance()`
 
 Compute the variance of the distribution.
 
@@ -88,7 +88,7 @@ A numeric value storing the variance of the distribution.
 
 ------------------------------------------------------------------------
 
-### Method `clone()`
+### `BaseDistribution$clone()`
 
 The objects of this class are cloneable with this method.
 

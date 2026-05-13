@@ -4,26 +4,26 @@ A class to model free unconstrained diffusion.
 
 ## Super class
 
-[`midi::BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
+[`BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
 -\> `FreeCompartment`
 
 ## Methods
 
 ### Public methods
 
-- [`FreeCompartment$new()`](#method-FreeCompartment-new)
+- [`FreeCompartment$new()`](#method-FreeCompartment-initialize)
 
 - [`FreeCompartment$clone()`](#method-FreeCompartment-clone)
 
 Inherited methods
 
-- [`midi::BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
-- [`midi::BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
-- [`midi::BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
+- [`BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
+- [`BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
+- [`BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
 
 ------------------------------------------------------------------------
 
-### Method `new()`
+### `FreeCompartment$new()`
 
 Instantiates a new free compartment.
 
@@ -45,7 +45,7 @@ An instance of the `FreeCompartment` class.
 
 ------------------------------------------------------------------------
 
-### Method `clone()`
+### `FreeCompartment$clone()`
 
 The objects of this class are cloneable with this method.
 

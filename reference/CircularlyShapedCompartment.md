@@ -5,26 +5,26 @@ circular shape with a given radius.
 
 ## Super class
 
-[`midi::BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
+[`BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
 -\> `CircularlyShapedCompartment`
 
 ## Methods
 
 ### Public methods
 
-- [`CircularlyShapedCompartment$new()`](#method-CircularlyShapedCompartment-new)
+- [`CircularlyShapedCompartment$new()`](#method-CircularlyShapedCompartment-initialize)
 
 - [`CircularlyShapedCompartment$clone()`](#method-CircularlyShapedCompartment-clone)
 
 Inherited methods
 
-- [`midi::BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
-- [`midi::BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
-- [`midi::BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
+- [`BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
+- [`BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
+- [`BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
 
 ------------------------------------------------------------------------
 
-### Method `new()`
+### `CircularlyShapedCompartment$new()`
 
 Instantiates a new circular compartment.
 
@@ -49,7 +49,7 @@ An instance of the `CircularlyShapedCompartment` class.
 
 ------------------------------------------------------------------------
 
-### Method `clone()`
+### `CircularlyShapedCompartment$clone()`
 
 The objects of this class are cloneable with this method.
 

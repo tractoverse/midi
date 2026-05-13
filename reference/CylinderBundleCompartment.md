@@ -4,26 +4,26 @@ A class to model restricted diffusion in a bundle of cylinders.
 
 ## Super class
 
-[`midi::BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
+[`BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
 -\> `CylinderBundleCompartment`
 
 ## Methods
 
 ### Public methods
 
-- [`CylinderBundleCompartment$new()`](#method-CylinderBundleCompartment-new)
+- [`CylinderBundleCompartment$new()`](#method-CylinderBundleCompartment-initialize)
 
 - [`CylinderBundleCompartment$clone()`](#method-CylinderBundleCompartment-clone)
 
 Inherited methods
 
-- [`midi::BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
-- [`midi::BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
-- [`midi::BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
+- [`BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
+- [`BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
+- [`BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
 
 ------------------------------------------------------------------------
 
-### Method `new()`
+### `CylinderBundleCompartment$new()`
 
 Instantiates a new cylinder bundle compartment.
 
@@ -71,7 +71,7 @@ An instance of the `CylinderBundleCompartment` class.
 
 ------------------------------------------------------------------------
 
-### Method `clone()`
+### `CylinderBundleCompartment$clone()`
 
 The objects of this class are cloneable with this method.
 

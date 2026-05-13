@@ -58,6 +58,7 @@ You can install the released version of midi from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
+
 install.packages("midi")
 ```
 
@@ -65,6 +66,7 @@ You can install the development version of midi from
 [GitHub](https://github.com/) with:
 
 ``` r
+
 # install.packages("devtools")
 devtools::install_github("lmjl-alea/midi")
 ```
@@ -74,6 +76,7 @@ devtools::install_github("lmjl-alea/midi")
 We can instantiate a cylinder compartment as follows:
 
 ``` r
+
 library(midi)
 restrComp <- VanGelderenCompartment$new(
   radius = 0.5, # um
@@ -96,6 +99,7 @@ Once instantiated, the compartment object can be used to access the list
 of its parameters:
 
 ``` r
+
 cylComp$get_parameters()
 #> $CylinderAxis
 #> [1] 0 0 1
@@ -113,18 +117,20 @@ for the compartment. In this example, we consider the following
 experimental conditions:
 
 ``` r
+
 cylComp$get_signal(
   small_delta = 30, # ms
   big_delta = 30, # ms
   G = 0.040, # uT/um
   direction = c(0, 0, 1)
 )
-#> [1] 0.002055938
+#> [1] 0.002063224
 ```
 
 We can also simulate and visualize cylinder bundles:
 
 ``` r
+
 density <- 0.7
 voxel_size <- 5 # um
 out <- simulate_bundle(density, voxel_size)

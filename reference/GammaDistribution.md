@@ -5,14 +5,14 @@ fitting the distribution to data and generating random samples.
 
 ## Super class
 
-[`midi::BaseDistribution`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.md)
+[`BaseDistribution`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.md)
 -\> `GammaDistribution`
 
 ## Methods
 
 ### Public methods
 
-- [`GammaDistribution$new()`](#method-GammaDistribution-new)
+- [`GammaDistribution$new()`](#method-GammaDistribution-initialize)
 
 - [`GammaDistribution$get_shape()`](#method-GammaDistribution-get_shape)
 
@@ -22,14 +22,14 @@ fitting the distribution to data and generating random samples.
 
 Inherited methods
 
-- [`midi::BaseDistribution$fit()`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.html#method-fit)
-- [`midi::BaseDistribution$get_mean()`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.html#method-get_mean)
-- [`midi::BaseDistribution$get_variance()`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.html#method-get_variance)
-- [`midi::BaseDistribution$random()`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.html#method-random)
+- [`BaseDistribution$fit()`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.html#method-fit)
+- [`BaseDistribution$get_mean()`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.html#method-get_mean)
+- [`BaseDistribution$get_variance()`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.html#method-get_variance)
+- [`BaseDistribution$random()`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.html#method-random)
 
 ------------------------------------------------------------------------
 
-### Method `new()`
+### `GammaDistribution$new()`
 
 Creates a new gamma distribution.
 
@@ -56,7 +56,7 @@ An instance of the gamma distribution as an object of class
 
 ------------------------------------------------------------------------
 
-### Method `get_shape()`
+### `GammaDistribution$get_shape()`
 
 Retrieves the shape parameter of the gamma distribution.
 
@@ -70,7 +70,7 @@ A numeric value storing the shape parameter of the gamma distribution.
 
 ------------------------------------------------------------------------
 
-### Method `get_scale()`
+### `GammaDistribution$get_scale()`
 
 Retrieves the scale parameter of the gamma distribution.
 
@@ -84,7 +84,7 @@ A numeric value storing the scale parameter of the gamma distribution.
 
 ------------------------------------------------------------------------
 
-### Method `clone()`
+### `GammaDistribution$clone()`
 
 The objects of this class are cloneable with this method.
 
@@ -114,11 +114,11 @@ gd$get_mean()
 gd$get_variance()
 #> [1] 25
 gd$random(10)
-#>  [1]  5.18043045  8.20880969  1.83784759  0.49850219  3.94789349  0.01503439
-#>  [7] 17.74877153  1.60394250  0.28604279  5.96272346
+#>  [1] 17.8360190  5.8395093  0.2872731  1.7020353 17.3578046  5.2183103
+#>  [7] 15.1313753  1.8378476  0.4985022  3.9478935
 gd$fit(gd$random(100))
 gd$get_shape()
-#> [1] 1.047473
+#> [1] 1.001781
 gd$get_scale()
-#> [1] 5.274058
+#> [1] 5.560486
 ```

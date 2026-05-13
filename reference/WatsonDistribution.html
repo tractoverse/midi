@@ -49,84 +49,79 @@ for fitting the distribution to data and generating random samples.</p>
 
     <div class="section level2">
     <h2 id="super-class">Super class<a class="anchor" aria-label="anchor" href="#super-class"></a></h2>
-    <p><code><a href="BaseDistribution.html">midi::BaseDistribution</a></code> -&gt; <code>WatsonDistribution</code></p>
+    <p><code><a href="BaseDistribution.html">BaseDistribution</a></code> -&gt; <code>WatsonDistribution</code></p>
     </div>
     <div class="section level2">
     <h2 id="methods">Methods<a class="anchor" aria-label="anchor" href="#methods"></a></h2>
 
 <div class="section">
 <h3 id="public-methods">Public methods<a class="anchor" aria-label="anchor" href="#public-methods"></a></h3>
-
-<ul><li><p><a href="#method-WatsonDistribution-new"><code>WatsonDistribution$new()</code></a></p></li>
+<p></p><ul><li><p><a href="#method-WatsonDistribution-initialize"><code>WatsonDistribution$new()</code></a></p></li>
 <li><p><a href="#method-WatsonDistribution-get_axis"><code>WatsonDistribution$get_axis()</code></a></p></li>
 <li><p><a href="#method-WatsonDistribution-get_concentration"><code>WatsonDistribution$get_concentration()</code></a></p></li>
 <li><p><a href="#method-WatsonDistribution-clone"><code>WatsonDistribution$clone()</code></a></p></li>
-</ul></div><p><details open><summary>Inherited methods</summary><ul><li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="fit"><a href="BaseDistribution.html#method-fit"><code>midi::BaseDistribution$fit()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="get_mean"><a href="BaseDistribution.html#method-get_mean"><code>midi::BaseDistribution$get_mean()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="get_variance"><a href="BaseDistribution.html#method-get_variance"><code>midi::BaseDistribution$get_variance()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="random"><a href="BaseDistribution.html#method-random"><code>midi::BaseDistribution$random()</code></a></span></li>
-</ul></details></p><hr><a id="method-WatsonDistribution-new"></a><div class="section">
-<h3 id="method-new-">Method <code>new()</code><a class="anchor" aria-label="anchor" href="#method-new-"></a></h3>
+</ul></div><p><details open><summary>Inherited methods</summary><ul><li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="fit"><a href="BaseDistribution.html#method-fit"><code>BaseDistribution$fit()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="get_mean"><a href="BaseDistribution.html#method-get_mean"><code>BaseDistribution$get_mean()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="get_variance"><a href="BaseDistribution.html#method-get_variance"><code>BaseDistribution$get_variance()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="random"><a href="BaseDistribution.html#method-random"><code>BaseDistribution$random()</code></a></span></li>
+</ul></details></p><hr><a id="method-WatsonDistribution-initialize"></a><div class="section">
+<h3 id="watsondistribution-new-"><code>WatsonDistribution$new()</code><a class="anchor" aria-label="anchor" href="#watsondistribution-new-"></a></h3>
 <p>Creates a new Watson distribution.</p><div class="section">
 <h4 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va"><a href="../reference/WatsonDistribution.html">WatsonDistribution</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span>mu <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">1</span><span class="op">)</span>, kappa <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>mu</code></dt>
 <dd><p>A numeric vector of length 3 specifying the mean direction of
 the Watson distribution. Defaults to <code>(0, 0, 1)</code>.</p></dd>
 
-
-<dt><code>kappa</code></dt>
+      <dt><code>kappa</code></dt>
 <dd><p>A numeric value specifying the concentration parameter of
 the Watson distribution. Defaults to <code>10.0</code>.</p></dd>
 
 
 </dl><p></p></div>
-</div>
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="returns">Returns<a class="anchor" aria-label="anchor" href="#returns"></a></h4>
 <p>An instance of the Watson distribution as an object of class
 <code>WatsonDistribution</code>.</p>
 </div>
 
-</div><p></p><hr><a id="method-WatsonDistribution-get_axis"></a><div class="section">
-<h3 id="method-get-axis-">Method <code>get_axis()</code><a class="anchor" aria-label="anchor" href="#method-get-axis-"></a></h3>
+</div>
+
+<p></p><hr><a id="method-WatsonDistribution-get_axis"></a><div class="section">
+<h3 id="watsondistribution-get-axis-"><code>WatsonDistribution$get_axis()</code><a class="anchor" aria-label="anchor" href="#watsondistribution-get-axis-"></a></h3>
 <p>Retrieves the mean axis of the Watson distribution.</p><div class="section">
 <h4 id="usage-1">Usage<a class="anchor" aria-label="anchor" href="#usage-1"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">WatsonDistribution</span><span class="op">$</span><span class="fu">get_axis</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="returns-1">Returns<a class="anchor" aria-label="anchor" href="#returns-1"></a></h4>
 <p>A numeric vector of length 3 storing the mean axis of the Watson
 distribution.</p>
 </div>
 
-</div><p></p><hr><a id="method-WatsonDistribution-get_concentration"></a><div class="section">
-<h3 id="method-get-concentration-">Method <code>get_concentration()</code><a class="anchor" aria-label="anchor" href="#method-get-concentration-"></a></h3>
+</div>
+
+<p></p><hr><a id="method-WatsonDistribution-get_concentration"></a><div class="section">
+<h3 id="watsondistribution-get-concentration-"><code>WatsonDistribution$get_concentration()</code><a class="anchor" aria-label="anchor" href="#watsondistribution-get-concentration-"></a></h3>
 <p>Retrieves the concentration parameter of the Watson
 distribution.</p><div class="section">
 <h4 id="usage-2">Usage<a class="anchor" aria-label="anchor" href="#usage-2"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">WatsonDistribution</span><span class="op">$</span><span class="fu">get_concentration</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="returns-2">Returns<a class="anchor" aria-label="anchor" href="#returns-2"></a></h4>
 <p>A numeric value storing the concentration parameter of the Watson
 distribution.</p>
 </div>
 
-</div><p></p><hr><a id="method-WatsonDistribution-clone"></a><div class="section">
-<h3 id="method-clone-">Method <code>clone()</code><a class="anchor" aria-label="anchor" href="#method-clone-"></a></h3>
+</div>
+
+<p></p><hr><a id="method-WatsonDistribution-clone"></a><div class="section">
+<h3 id="watsondistribution-clone-"><code>WatsonDistribution$clone()</code><a class="anchor" aria-label="anchor" href="#watsondistribution-clone-"></a></h3>
 <p>The objects of this class are cloneable with this method.</p><div class="section">
 <h4 id="usage-3">Usage<a class="anchor" aria-label="anchor" href="#usage-3"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">WatsonDistribution</span><span class="op">$</span><span class="fu">clone</span><span class="op">(</span>deep <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="arguments-1">Arguments<a class="anchor" aria-label="anchor" href="#arguments-1"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>deep</code></dt>
 <dd><p>Whether to make a deep clone.</p></dd>
@@ -136,6 +131,7 @@ distribution.</p>
 </div>
 
 </div>
+
 
     </div>
 
@@ -151,40 +147,40 @@ distribution.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 10</span>
 <span class="r-in"><span><span class="va">wd</span><span class="op">$</span><span class="fu">random</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[1]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.1305185  0.1437479  0.9809697</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.13237162  0.02374105  0.99091580</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[2]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.2882047 0.2054522 0.9352686</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.08423882 0.41784704 0.90460360</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[3]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.3405410 -0.1093761  0.9338462</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1]  0.7947338 -0.0201646  0.6066230</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[4]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.07887883  0.27967791  0.95684816</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.08169297 0.07219491 0.99403931</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[5]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.1012958 -0.1123559  0.9884914</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.1757129 0.1309836 0.9756886</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[6]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.0726425  0.8331471  0.5482600</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.107719805 -0.001532592  0.994180112</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[7]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.2639347 0.1784568 0.9478880</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.08345784 -0.34058075  0.93650389</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[8]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1]  0.0006495886 -0.4170701965  0.9088740447</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1]  0.02291961 -0.07663694  0.99679560</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[9]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.02479583  0.35059414  0.93619919</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.1305185  0.1437479  0.9809697</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [[10]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.2105415 -0.2716214  0.9390922</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.2882047 0.2054522 0.9352686</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span><span class="va">wd</span><span class="op">$</span><span class="fu">fit</span><span class="op">(</span><span class="va">wd</span><span class="op">$</span><span class="fu">random</span><span class="op">(</span><span class="fl">100</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">wd</span><span class="op">$</span><span class="fu">get_axis</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1]  0.02163945  0.03845331 -0.99902606</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1]  0.03407031  0.04412166 -0.99844504</span>
 <span class="r-in"><span><span class="va">wd</span><span class="op">$</span><span class="fu">get_concentration</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 10.15158</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 9.508437</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

@@ -4,28 +4,28 @@ A class to model restricted diffusion in a cylinder.
 
 ## Super classes
 
-[`midi::BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
+[`BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
 -\>
-[`midi::CircularlyShapedCompartment`](https://lmjl-alea.github.io/midi/reference/CircularlyShapedCompartment.md)
+[`CircularlyShapedCompartment`](https://lmjl-alea.github.io/midi/reference/CircularlyShapedCompartment.md)
 -\> `CylinderCompartment`
 
 ## Methods
 
 ### Public methods
 
-- [`CylinderCompartment$new()`](#method-CylinderCompartment-new)
+- [`CylinderCompartment$new()`](#method-CylinderCompartment-initialize)
 
 - [`CylinderCompartment$clone()`](#method-CylinderCompartment-clone)
 
 Inherited methods
 
-- [`midi::BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
-- [`midi::BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
-- [`midi::BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
+- [`BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
+- [`BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
+- [`BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
 
 ------------------------------------------------------------------------
 
-### Method `new()`
+### `CylinderCompartment$new()`
 
 Instantiates a new cylinder compartment.
 
@@ -55,7 +55,7 @@ An instance of the `CylinderCompartment` class.
 
 ------------------------------------------------------------------------
 
-### Method `clone()`
+### `CylinderCompartment$clone()`
 
 The objects of this class are cloneable with this method.
 

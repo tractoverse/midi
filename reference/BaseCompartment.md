@@ -16,7 +16,7 @@ The base class for compartment models.
 
 ------------------------------------------------------------------------
 
-### Method `get_signal()`
+### `BaseCompartment$get_signal()`
 
 Computes the signal attenuation predicted by the model.
 
@@ -100,7 +100,7 @@ A numeric value storing the predicted signal attenuation.
 
 ------------------------------------------------------------------------
 
-### Method `get_parameter_names()`
+### `BaseCompartment$get_parameter_names()`
 
 Returns the names of the compartment parameters
 
@@ -119,7 +119,7 @@ A character vector storing the names of the compartment parameters.
 
 ------------------------------------------------------------------------
 
-### Method `get_parameters()`
+### `BaseCompartment$get_parameters()`
 
 Returns the values of the compartment parameters
 
@@ -138,7 +138,7 @@ A numeric vector storing the values of the compartment parameters.
 
 ------------------------------------------------------------------------
 
-### Method `clone()`
+### `BaseCompartment$clone()`
 
 The objects of this class are cloneable with this method.
 
@@ -155,8 +155,9 @@ The objects of this class are cloneable with this method.
 ## Examples
 
 ``` r
+
 ## ------------------------------------------------
-## Method `BaseCompartment$get_signal`
+## Method `BaseCompartment$get_signal()`
 ## ------------------------------------------------
 
 freeComp <- FreeCompartment$new()
@@ -191,7 +192,7 @@ vanGelderenComp$get_signal(small_delta = 30, big_delta = 30, G = 0.040)
 #> [1] 0.1205943
 
 ## ------------------------------------------------
-## Method `BaseCompartment$get_parameter_names`
+## Method `BaseCompartment$get_parameter_names()`
 ## ------------------------------------------------
 
 freeComp <- FreeCompartment$new()
@@ -199,7 +200,7 @@ freeComp$get_parameter_names()
 #> [1] "FreeDiffusivity"
 
 ## ------------------------------------------------
-## Method `BaseCompartment$get_parameters`
+## Method `BaseCompartment$get_parameters()`
 ## ------------------------------------------------
 
 freeComp <- FreeCompartment$new()

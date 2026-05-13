@@ -49,83 +49,78 @@ for fitting the distribution to data and generating random samples.</p>
 
     <div class="section level2">
     <h2 id="super-class">Super class<a class="anchor" aria-label="anchor" href="#super-class"></a></h2>
-    <p><code><a href="BaseDistribution.html">midi::BaseDistribution</a></code> -&gt; <code>GammaDistribution</code></p>
+    <p><code><a href="BaseDistribution.html">BaseDistribution</a></code> -&gt; <code>GammaDistribution</code></p>
     </div>
     <div class="section level2">
     <h2 id="methods">Methods<a class="anchor" aria-label="anchor" href="#methods"></a></h2>
 
 <div class="section">
 <h3 id="public-methods">Public methods<a class="anchor" aria-label="anchor" href="#public-methods"></a></h3>
-
-<ul><li><p><a href="#method-GammaDistribution-new"><code>GammaDistribution$new()</code></a></p></li>
+<p></p><ul><li><p><a href="#method-GammaDistribution-initialize"><code>GammaDistribution$new()</code></a></p></li>
 <li><p><a href="#method-GammaDistribution-get_shape"><code>GammaDistribution$get_shape()</code></a></p></li>
 <li><p><a href="#method-GammaDistribution-get_scale"><code>GammaDistribution$get_scale()</code></a></p></li>
 <li><p><a href="#method-GammaDistribution-clone"><code>GammaDistribution$clone()</code></a></p></li>
-</ul></div><p><details open><summary>Inherited methods</summary><ul><li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="fit"><a href="BaseDistribution.html#method-fit"><code>midi::BaseDistribution$fit()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="get_mean"><a href="BaseDistribution.html#method-get_mean"><code>midi::BaseDistribution$get_mean()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="get_variance"><a href="BaseDistribution.html#method-get_variance"><code>midi::BaseDistribution$get_variance()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="random"><a href="BaseDistribution.html#method-random"><code>midi::BaseDistribution$random()</code></a></span></li>
-</ul></details></p><hr><a id="method-GammaDistribution-new"></a><div class="section">
-<h3 id="method-new-">Method <code>new()</code><a class="anchor" aria-label="anchor" href="#method-new-"></a></h3>
+</ul></div><p><details open><summary>Inherited methods</summary><ul><li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="fit"><a href="BaseDistribution.html#method-fit"><code>BaseDistribution$fit()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="get_mean"><a href="BaseDistribution.html#method-get_mean"><code>BaseDistribution$get_mean()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="get_variance"><a href="BaseDistribution.html#method-get_variance"><code>BaseDistribution$get_variance()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="random"><a href="BaseDistribution.html#method-random"><code>BaseDistribution$random()</code></a></span></li>
+</ul></details></p><hr><a id="method-GammaDistribution-initialize"></a><div class="section">
+<h3 id="gammadistribution-new-"><code>GammaDistribution$new()</code><a class="anchor" aria-label="anchor" href="#gammadistribution-new-"></a></h3>
 <p>Creates a new gamma distribution.</p><div class="section">
 <h4 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va"><a href="../reference/GammaDistribution.html">GammaDistribution</a></span><span class="op">$</span><span class="fu">new</span><span class="op">(</span>shape <span class="op">=</span> <span class="fl">1</span>, scale <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>shape</code></dt>
 <dd><p>A numeric value specifying the shape parameter of the gamma
 distribution. Defaults to <code>1.0</code>.</p></dd>
 
-
-<dt><code>scale</code></dt>
+      <dt><code>scale</code></dt>
 <dd><p>A numeric value specifying the scale parameter of the gamma
 distribution. Defaults to <code>1.0</code>.</p></dd>
 
 
 </dl><p></p></div>
-</div>
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="returns">Returns<a class="anchor" aria-label="anchor" href="#returns"></a></h4>
 <p>An instance of the gamma distribution as an object of class
 <code>GammaDistribution</code>.</p>
 </div>
 
-</div><p></p><hr><a id="method-GammaDistribution-get_shape"></a><div class="section">
-<h3 id="method-get-shape-">Method <code>get_shape()</code><a class="anchor" aria-label="anchor" href="#method-get-shape-"></a></h3>
+</div>
+
+<p></p><hr><a id="method-GammaDistribution-get_shape"></a><div class="section">
+<h3 id="gammadistribution-get-shape-"><code>GammaDistribution$get_shape()</code><a class="anchor" aria-label="anchor" href="#gammadistribution-get-shape-"></a></h3>
 <p>Retrieves the shape parameter of the gamma distribution.</p><div class="section">
 <h4 id="usage-1">Usage<a class="anchor" aria-label="anchor" href="#usage-1"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">GammaDistribution</span><span class="op">$</span><span class="fu">get_shape</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="returns-1">Returns<a class="anchor" aria-label="anchor" href="#returns-1"></a></h4>
 <p>A numeric value storing the shape parameter of the gamma
 distribution.</p>
 </div>
 
-</div><p></p><hr><a id="method-GammaDistribution-get_scale"></a><div class="section">
-<h3 id="method-get-scale-">Method <code>get_scale()</code><a class="anchor" aria-label="anchor" href="#method-get-scale-"></a></h3>
+</div>
+
+<p></p><hr><a id="method-GammaDistribution-get_scale"></a><div class="section">
+<h3 id="gammadistribution-get-scale-"><code>GammaDistribution$get_scale()</code><a class="anchor" aria-label="anchor" href="#gammadistribution-get-scale-"></a></h3>
 <p>Retrieves the scale parameter of the gamma distribution.</p><div class="section">
 <h4 id="usage-2">Usage<a class="anchor" aria-label="anchor" href="#usage-2"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">GammaDistribution</span><span class="op">$</span><span class="fu">get_scale</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="returns-2">Returns<a class="anchor" aria-label="anchor" href="#returns-2"></a></h4>
 <p>A numeric value storing the scale parameter of the gamma
 distribution.</p>
 </div>
 
-</div><p></p><hr><a id="method-GammaDistribution-clone"></a><div class="section">
-<h3 id="method-clone-">Method <code>clone()</code><a class="anchor" aria-label="anchor" href="#method-clone-"></a></h3>
+</div>
+
+<p></p><hr><a id="method-GammaDistribution-clone"></a><div class="section">
+<h3 id="gammadistribution-clone-"><code>GammaDistribution$clone()</code><a class="anchor" aria-label="anchor" href="#gammadistribution-clone-"></a></h3>
 <p>The objects of this class are cloneable with this method.</p><div class="section">
 <h4 id="usage-3">Usage<a class="anchor" aria-label="anchor" href="#usage-3"></a></h4>
 <p></p><div class="r"><div class="sourceCode"><pre><code><span><span class="va">GammaDistribution</span><span class="op">$</span><span class="fu">clone</span><span class="op">(</span>deep <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div><p></p></div>
-</div>
-
-<div class="section">
+</div><p></p><div class="section">
 <h4 id="arguments-1">Arguments<a class="anchor" aria-label="anchor" href="#arguments-1"></a></h4>
 <p></p><div class="arguments"><dl><dt><code>deep</code></dt>
 <dd><p>Whether to make a deep clone.</p></dd>
@@ -135,6 +130,7 @@ distribution.</p>
 </div>
 
 </div>
+
 
     </div>
 
@@ -153,13 +149,13 @@ distribution.</p>
 <span class="r-in"><span><span class="va">gd</span><span class="op">$</span><span class="fu">get_variance</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 25</span>
 <span class="r-in"><span><span class="va">gd</span><span class="op">$</span><span class="fu">random</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1]  5.18043045  8.20880969  1.83784759  0.49850219  3.94789349  0.01503439</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [7] 17.74877153  1.60394250  0.28604279  5.96272346</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] 17.8360190  5.8395093  0.2872731  1.7020353 17.3578046  5.2183103</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [7] 15.1313753  1.8378476  0.4985022  3.9478935</span>
 <span class="r-in"><span><span class="va">gd</span><span class="op">$</span><span class="fu">fit</span><span class="op">(</span><span class="va">gd</span><span class="op">$</span><span class="fu">random</span><span class="op">(</span><span class="fl">100</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">gd</span><span class="op">$</span><span class="fu">get_shape</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 1.047473</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 1.001781</span>
 <span class="r-in"><span><span class="va">gd</span><span class="op">$</span><span class="fu">get_scale</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 5.274058</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 5.560486</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
