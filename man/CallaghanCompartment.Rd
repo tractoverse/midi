@@ -13,39 +13,39 @@ planar, cylindrical, and spherical pores under conditions of wall
 relaxation. Journal of magnetic resonance, Series A, 113(1), 53-59.
 }
 \section{Super classes}{
-\code{\link[midi:BaseCompartment]{midi::BaseCompartment}} -> \code{\link[midi:CircularlyShapedCompartment]{midi::CircularlyShapedCompartment}} -> \code{CallaghanCompartment}
+\code{\link[midi:BaseCompartment]{BaseCompartment}} -> \code{\link[midi:CircularlyShapedCompartment]{CircularlyShapedCompartment}} -> \code{CallaghanCompartment}
 }
 \section{Methods}{
 \subsection{Public methods}{
-\itemize{
-\item \href{#method-CallaghanCompartment-clone}{\code{CallaghanCompartment$clone()}}
+  \itemize{
+    \item \href{#method-CallaghanCompartment-clone}{\code{CallaghanCompartment$clone()}}
+  }
 }
-}
-\if{html}{\out{
-<details open><summary>Inherited methods</summary>
+\if{html}{\out{<details open><summary>Inherited methods</summary>
 <ul>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>midi::BaseCompartment$get_parameter_names()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>midi::BaseCompartment$get_parameters()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>midi::BaseCompartment$get_signal()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="CircularlyShapedCompartment" data-id="initialize"><a href='../../midi/html/CircularlyShapedCompartment.html#method-CircularlyShapedCompartment-initialize'><code>midi::CircularlyShapedCompartment$initialize()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>BaseCompartment$get_parameter_names()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>BaseCompartment$get_parameters()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>BaseCompartment$get_signal()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="CircularlyShapedCompartment" data-id="initialize"><a href='../../midi/html/CircularlyShapedCompartment.html#method-CircularlyShapedCompartment-initialize'><code>CircularlyShapedCompartment$initialize()</code></a></span></li>
 </ul>
-</details>
-}}
+</details>}}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-CallaghanCompartment-clone"></a>}}
 \if{latex}{\out{\hypertarget{method-CallaghanCompartment-clone}{}}}
-\subsection{Method \code{clone()}}{
-The objects of this class are cloneable with this method.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CallaghanCompartment$clone(deep = FALSE)}\if{html}{\out{</div>}}
+\subsection{\code{CallaghanCompartment$clone()}}{
+  The objects of this class are cloneable with this method.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{CallaghanCompartment$clone(deep = FALSE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{deep}}{Whether to make a deep clone.}
-}
-\if{html}{\out{</div>}}
-}
-}
 }

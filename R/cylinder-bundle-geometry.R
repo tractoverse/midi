@@ -126,19 +126,17 @@ simulate_bundle <- function(density = 0.5,
 autoplot.bundle <- function(object, grid_size = 100L, ...) {
   grd <- seq(0, 2 * pi, length.out = grid_size)
   voxel_size <- object$voxel_size
-  sections <- object$sections |>
-    purrr::array_tree(margin = 1) |>
-    purrr::imap(\(vals, id) {
-      res <- data.frame(
-        x = vals[1] + vals[3] * cos(grd),
-        y = vals[2] + vals[3] * sin(grd)
-      )
-      res$id <- id
-      res
-    })
+  sections <- purrr::array_tree(object$sections, margin = 1)
+  sections <- purrr::imap(sections, function(vals, id) {
+    res <- data.frame(
+      x = vals[1] + vals[3] * cos(grd),
+      y = vals[2] + vals[3] * sin(grd)
+    )
+    res$id <- id
+    res
+  })
   sections <- do.call(rbind, sections)
-  sections |>
-    ggplot2::ggplot(ggplot2::aes(.data$x, .data$y)) +
+  ggplot2::ggplot(sections, ggplot2::aes(.data$x, .data$y)) +
     ggplot2::geom_polygon(ggplot2::aes(group = .data$id)) +
     ggplot2::geom_hline(yintercept = -voxel_size / 2, color = "black") +
     ggplot2::geom_hline(yintercept =  voxel_size / 2, color = "black") +
@@ -196,14 +194,13 @@ plot.bundle <- function(x, grid_size = 100L, ...) {
 plot3d <- function(b, show_linear_mesh = FALSE) {
   if (!inherits(b, "bundle"))
     cli::cli_abort("Input {.arg b} must be an object of class {.cls bundle}.")
-  cylinders <- b$sections |>
-    purrr::array_tree(margin = 1) |>
-    purrr::map(\(v) cylinder_traces(
-      r = v["r"], xs = v["x"], ys = v["y"], zs = 0, h = 1,
-      surface_kw = list(opacity = 0.3), show_linear_mesh = show_linear_mesh,
-      line_kw = list(opacity = 0.3, line = list(color = "#202020", width = 3))
-    )) |>
-    purrr::flatten()
+  cylinders <- purrr::array_tree(b$sections, margin = 1)
+  cylinders <- purrr::map(cylinders, function(v) cylinder_traces(
+    r = v["r"], xs = v["x"], ys = v["y"], zs = 0, h = 1,
+    surface_kw = list(opacity = 0.3), show_linear_mesh = show_linear_mesh,
+    line_kw = list(opacity = 0.3, line = list(color = "#202020", width = 3))
+  ))
+  cylinders <- purrr::flatten(cylinders)
 
   fig <- plotly::plot_ly()
   for (cylinder in cylinders)

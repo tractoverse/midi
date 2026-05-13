@@ -34,82 +34,81 @@ comp$get_signal(
 comp$get_parameters()
 }
 \section{Super class}{
-\code{\link[midi:BaseCompartment]{midi::BaseCompartment}} -> \code{CylinderBundleCompartment}
+\code{\link[midi:BaseCompartment]{BaseCompartment}} -> \code{CylinderBundleCompartment}
 }
 \section{Methods}{
 \subsection{Public methods}{
-\itemize{
-\item \href{#method-CylinderBundleCompartment-new}{\code{CylinderBundleCompartment$new()}}
-\item \href{#method-CylinderBundleCompartment-clone}{\code{CylinderBundleCompartment$clone()}}
+  \itemize{
+    \item \href{#method-CylinderBundleCompartment-initialize}{\code{CylinderBundleCompartment$new()}}
+    \item \href{#method-CylinderBundleCompartment-clone}{\code{CylinderBundleCompartment$clone()}}
+  }
 }
-}
-\if{html}{\out{
-<details open><summary>Inherited methods</summary>
+\if{html}{\out{<details open><summary>Inherited methods</summary>
 <ul>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>midi::BaseCompartment$get_parameter_names()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>midi::BaseCompartment$get_parameters()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>midi::BaseCompartment$get_signal()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>BaseCompartment$get_parameter_names()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>BaseCompartment$get_parameters()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>BaseCompartment$get_signal()</code></a></span></li>
 </ul>
-</details>
-}}
+</details>}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-CylinderBundleCompartment-new"></a>}}
-\if{latex}{\out{\hypertarget{method-CylinderBundleCompartment-new}{}}}
-\subsection{Method \code{new()}}{
-Instantiates a new cylinder bundle compartment.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CylinderBundleCompartment$new(
+\if{html}{\out{<a id="method-CylinderBundleCompartment-initialize"></a>}}
+\if{latex}{\out{\hypertarget{method-CylinderBundleCompartment-initialize}{}}}
+\subsection{\code{CylinderBundleCompartment$new()}}{
+  Instantiates a new cylinder bundle compartment.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{CylinderBundleCompartment$new(
   cylinder_density,
   cylinder_compartments,
   axial_diffusivity = NULL,
   radial_diffusivity = NULL
-)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{cylinder_density}}{A numeric value specifying the density of the
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{cylinder_density}}{A numeric value specifying the density of the
 cylinders in the voxel. Must be between 0 and 1.}
-
-\item{\code{cylinder_compartments}}{A list of instances of the
+      \item{\code{cylinder_compartments}}{A list of instances of the
 \code{\link{CylinderCompartment}} class specifying the compartments within the
 bundle.}
-
-\item{\code{axial_diffusivity}}{A numeric value specifying the axial diffusivity
+      \item{\code{axial_diffusivity}}{A numeric value specifying the axial diffusivity
 in the space outside the cylinders in m\eqn{^2}.s\eqn{^{-1}}. If not
 provided, defaults to a tortuosity model reducing the intrinsic
 diffusivity depending on orientation dispersion. Defaults to \code{NULL} in
 which case the extracellular axial diffusivity is set via a tortuosity
 model based on the dispersion in orientation.}
-
-\item{\code{radial_diffusivity}}{A numeric value specifying the radial
+      \item{\code{radial_diffusivity}}{A numeric value specifying the radial
 diffusivity in the space outside the cylinders in
 m\eqn{^2}.s\eqn{^{-1}}. Defaults to \code{NULL} in which case the
 extracellular radial diffusivity is set via a tortuosity model based on
 the intracellular density.}
+    }
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    An instance of the \code{\link{CylinderBundleCompartment}} class.
+  }
 }
-\if{html}{\out{</div>}}
-}
-\subsection{Returns}{
-An instance of the \code{\link{CylinderBundleCompartment}} class.
-}
-}
+
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-CylinderBundleCompartment-clone"></a>}}
 \if{latex}{\out{\hypertarget{method-CylinderBundleCompartment-clone}{}}}
-\subsection{Method \code{clone()}}{
-The objects of this class are cloneable with this method.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CylinderBundleCompartment$clone(deep = FALSE)}\if{html}{\out{</div>}}
+\subsection{\code{CylinderBundleCompartment$clone()}}{
+  The objects of this class are cloneable with this method.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{CylinderBundleCompartment$clone(deep = FALSE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{deep}}{Whether to make a deep clone.}
-}
-\if{html}{\out{</div>}}
-}
-}
 }

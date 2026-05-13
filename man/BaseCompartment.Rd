@@ -9,7 +9,7 @@ The base class for compartment models.
 \examples{
 
 ## ------------------------------------------------
-## Method `BaseCompartment$get_signal`
+## Method `BaseCompartment$get_signal()`
 ## ------------------------------------------------
 
 freeComp <- FreeCompartment$new()
@@ -37,14 +37,14 @@ vanGelderenComp <- VanGelderenCompartment$new()
 vanGelderenComp$get_signal(small_delta = 30, big_delta = 30, G = 0.040)
 
 ## ------------------------------------------------
-## Method `BaseCompartment$get_parameter_names`
+## Method `BaseCompartment$get_parameter_names()`
 ## ------------------------------------------------
 
 freeComp <- FreeCompartment$new()
 freeComp$get_parameter_names()
 
 ## ------------------------------------------------
-## Method `BaseCompartment$get_parameters`
+## Method `BaseCompartment$get_parameters()`
 ## ------------------------------------------------
 
 freeComp <- FreeCompartment$new()
@@ -53,20 +53,21 @@ freeComp$get_parameters()
 \keyword{internal}
 \section{Methods}{
 \subsection{Public methods}{
-\itemize{
-\item \href{#method-BaseCompartment-get_signal}{\code{BaseCompartment$get_signal()}}
-\item \href{#method-BaseCompartment-get_parameter_names}{\code{BaseCompartment$get_parameter_names()}}
-\item \href{#method-BaseCompartment-get_parameters}{\code{BaseCompartment$get_parameters()}}
-\item \href{#method-BaseCompartment-clone}{\code{BaseCompartment$clone()}}
-}
+  \itemize{
+    \item \href{#method-BaseCompartment-get_signal}{\code{BaseCompartment$get_signal()}}
+    \item \href{#method-BaseCompartment-get_parameter_names}{\code{BaseCompartment$get_parameter_names()}}
+    \item \href{#method-BaseCompartment-get_parameters}{\code{BaseCompartment$get_parameters()}}
+    \item \href{#method-BaseCompartment-clone}{\code{BaseCompartment$clone()}}
+  }
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-BaseCompartment-get_signal"></a>}}
 \if{latex}{\out{\hypertarget{method-BaseCompartment-get_signal}{}}}
-\subsection{Method \code{get_signal()}}{
-Computes the signal attenuation predicted by the model.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{BaseCompartment$get_signal(
+\subsection{\code{BaseCompartment$get_signal()}}{
+  Computes the signal attenuation predicted by the model.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{BaseCompartment$get_signal(
   small_delta,
   big_delta,
   G,
@@ -74,41 +75,35 @@ Computes the signal attenuation predicted by the model.
   echo_time = NULL,
   n_max = 20L,
   m_max = 50L
-)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{small_delta}}{A numeric value specifying the duration of the
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{small_delta}}{A numeric value specifying the duration of the
 gradient pulse in milliseconds.}
-
-\item{\code{big_delta}}{A numeric value specifying the duration between the
+      \item{\code{big_delta}}{A numeric value specifying the duration between the
 gradient pulses in milliseconds.}
-
-\item{\code{G}}{A numeric value specifying the strength of the gradient in
+      \item{\code{G}}{A numeric value specifying the strength of the gradient in
 mT.\eqn{\mu}m\eqn{^{-1}}.}
-
-\item{\code{direction}}{A numeric vector specifying the direction of the
+      \item{\code{direction}}{A numeric vector specifying the direction of the
 gradient. Defaults to \code{c(0, 0, 1)}.}
-
-\item{\code{echo_time}}{A numeric value specifying the echo time in
+      \item{\code{echo_time}}{A numeric value specifying the echo time in
 milliseconds.}
-
-\item{\code{n_max}}{An integer value specifying the maximum order of the Bessel
+      \item{\code{n_max}}{An integer value specifying the maximum order of the Bessel
 function. Defaults to \code{20L}.}
-
-\item{\code{m_max}}{An integer value specifying the maximum number of extrema
+      \item{\code{m_max}}{An integer value specifying the maximum number of extrema
 for the Bessel function. Defaults to \code{50L}.}
-}
-\if{html}{\out{</div>}}
-}
-\subsection{Returns}{
-A numeric value storing the predicted signal attenuation.
-}
-\subsection{Examples}{
-\if{html}{\out{<div class="r example copy">}}
-\preformatted{freeComp <- FreeCompartment$new()
+    }
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    A numeric value storing the predicted signal attenuation.
+  }
+  \subsection{Examples}{
+    \if{html}{\out{<div class="r example copy">}}
+    \preformatted{freeComp <- FreeCompartment$new()
 freeComp$get_signal(small_delta = 30, big_delta = 30, G = 0.040)
 
 sphereComp <- SphereCompartment$new()
@@ -132,72 +127,73 @@ callaghanComp$get_signal(small_delta = 30, big_delta = 30, G = 0.040)
 vanGelderenComp <- VanGelderenCompartment$new()
 vanGelderenComp$get_signal(small_delta = 30, big_delta = 30, G = 0.040)
 }
-\if{html}{\out{</div>}}
-
+    \if{html}{\out{</div>}}
+  }
 }
 
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-BaseCompartment-get_parameter_names"></a>}}
 \if{latex}{\out{\hypertarget{method-BaseCompartment-get_parameter_names}{}}}
-\subsection{Method \code{get_parameter_names()}}{
-Returns the names of the compartment parameters
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{BaseCompartment$get_parameter_names()}\if{html}{\out{</div>}}
-}
-
-\subsection{Returns}{
-A character vector storing the names of the compartment
+\subsection{\code{BaseCompartment$get_parameter_names()}}{
+  Returns the names of the compartment parameters
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{BaseCompartment$get_parameter_names()}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    A character vector storing the names of the compartment
 parameters.
-}
-\subsection{Examples}{
-\if{html}{\out{<div class="r example copy">}}
-\preformatted{freeComp <- FreeCompartment$new()
+  }
+  \subsection{Examples}{
+    \if{html}{\out{<div class="r example copy">}}
+    \preformatted{freeComp <- FreeCompartment$new()
 freeComp$get_parameter_names()
 }
-\if{html}{\out{</div>}}
-
+    \if{html}{\out{</div>}}
+  }
 }
 
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-BaseCompartment-get_parameters"></a>}}
 \if{latex}{\out{\hypertarget{method-BaseCompartment-get_parameters}{}}}
-\subsection{Method \code{get_parameters()}}{
-Returns the values of the compartment parameters
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{BaseCompartment$get_parameters()}\if{html}{\out{</div>}}
-}
-
-\subsection{Returns}{
-A numeric vector storing the values of the compartment
+\subsection{\code{BaseCompartment$get_parameters()}}{
+  Returns the values of the compartment parameters
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{BaseCompartment$get_parameters()}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    A numeric vector storing the values of the compartment
 parameters.
-}
-\subsection{Examples}{
-\if{html}{\out{<div class="r example copy">}}
-\preformatted{freeComp <- FreeCompartment$new()
+  }
+  \subsection{Examples}{
+    \if{html}{\out{<div class="r example copy">}}
+    \preformatted{freeComp <- FreeCompartment$new()
 freeComp$get_parameters()
 }
-\if{html}{\out{</div>}}
-
+    \if{html}{\out{</div>}}
+  }
 }
 
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-BaseCompartment-clone"></a>}}
 \if{latex}{\out{\hypertarget{method-BaseCompartment-clone}{}}}
-\subsection{Method \code{clone()}}{
-The objects of this class are cloneable with this method.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{BaseCompartment$clone(deep = FALSE)}\if{html}{\out{</div>}}
+\subsection{\code{BaseCompartment$clone()}}{
+  The objects of this class are cloneable with this method.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{BaseCompartment$clone(deep = FALSE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{deep}}{Whether to make a deep clone.}
-}
-\if{html}{\out{</div>}}
-}
-}
 }

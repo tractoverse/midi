@@ -20,8 +20,6 @@ Description: An implementation of a taxonomy of models of restricted diffusion
     <doi:10.1006/jmra.1995.1055>.
 License: MIT + file LICENSE
 Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 Depends: 
     R (>= 3.5)
 URL: https://github.com/lmjl-alea/midi, https://lmjl-alea.github.io/midi/
@@ -37,3 +35,5 @@ Imports:
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+Config/roxygen2/markdown: TRUE

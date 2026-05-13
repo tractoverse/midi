@@ -20,96 +20,101 @@ wd$get_axis()
 wd$get_concentration()
 }
 \section{Super class}{
-\code{\link[midi:BaseDistribution]{midi::BaseDistribution}} -> \code{WatsonDistribution}
+\code{\link[midi:BaseDistribution]{BaseDistribution}} -> \code{WatsonDistribution}
 }
 \section{Methods}{
 \subsection{Public methods}{
-\itemize{
-\item \href{#method-WatsonDistribution-new}{\code{WatsonDistribution$new()}}
-\item \href{#method-WatsonDistribution-get_axis}{\code{WatsonDistribution$get_axis()}}
-\item \href{#method-WatsonDistribution-get_concentration}{\code{WatsonDistribution$get_concentration()}}
-\item \href{#method-WatsonDistribution-clone}{\code{WatsonDistribution$clone()}}
+  \itemize{
+    \item \href{#method-WatsonDistribution-initialize}{\code{WatsonDistribution$new()}}
+    \item \href{#method-WatsonDistribution-get_axis}{\code{WatsonDistribution$get_axis()}}
+    \item \href{#method-WatsonDistribution-get_concentration}{\code{WatsonDistribution$get_concentration()}}
+    \item \href{#method-WatsonDistribution-clone}{\code{WatsonDistribution$clone()}}
+  }
 }
-}
-\if{html}{\out{
-<details open><summary>Inherited methods</summary>
+\if{html}{\out{<details open><summary>Inherited methods</summary>
 <ul>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="fit"><a href='../../midi/html/BaseDistribution.html#method-BaseDistribution-fit'><code>midi::BaseDistribution$fit()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="get_mean"><a href='../../midi/html/BaseDistribution.html#method-BaseDistribution-get_mean'><code>midi::BaseDistribution$get_mean()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="get_variance"><a href='../../midi/html/BaseDistribution.html#method-BaseDistribution-get_variance'><code>midi::BaseDistribution$get_variance()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="random"><a href='../../midi/html/BaseDistribution.html#method-BaseDistribution-random'><code>midi::BaseDistribution$random()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="fit"><a href='../../midi/html/BaseDistribution.html#method-BaseDistribution-fit'><code>BaseDistribution$fit()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="get_mean"><a href='../../midi/html/BaseDistribution.html#method-BaseDistribution-get_mean'><code>BaseDistribution$get_mean()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="get_variance"><a href='../../midi/html/BaseDistribution.html#method-BaseDistribution-get_variance'><code>BaseDistribution$get_variance()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseDistribution" data-id="random"><a href='../../midi/html/BaseDistribution.html#method-BaseDistribution-random'><code>BaseDistribution$random()</code></a></span></li>
 </ul>
-</details>
-}}
+</details>}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-WatsonDistribution-new"></a>}}
-\if{latex}{\out{\hypertarget{method-WatsonDistribution-new}{}}}
-\subsection{Method \code{new()}}{
-Creates a new Watson distribution.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{WatsonDistribution$new(mu = c(0, 0, 1), kappa = 10)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{mu}}{A numeric vector of length 3 specifying the mean direction of
+\if{html}{\out{<a id="method-WatsonDistribution-initialize"></a>}}
+\if{latex}{\out{\hypertarget{method-WatsonDistribution-initialize}{}}}
+\subsection{\code{WatsonDistribution$new()}}{
+  Creates a new Watson distribution.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{WatsonDistribution$new(mu = c(0, 0, 1), kappa = 10)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{mu}}{A numeric vector of length 3 specifying the mean direction of
 the Watson distribution. Defaults to \verb{(0, 0, 1)}.}
-
-\item{\code{kappa}}{A numeric value specifying the concentration parameter of
+      \item{\code{kappa}}{A numeric value specifying the concentration parameter of
 the Watson distribution. Defaults to \code{10.0}.}
-}
-\if{html}{\out{</div>}}
-}
-\subsection{Returns}{
-An instance of the Watson distribution as an object of class
+    }
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    An instance of the Watson distribution as an object of class
 \code{\link{WatsonDistribution}}.
+  }
 }
-}
+
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-WatsonDistribution-get_axis"></a>}}
 \if{latex}{\out{\hypertarget{method-WatsonDistribution-get_axis}{}}}
-\subsection{Method \code{get_axis()}}{
-Retrieves the mean axis of the Watson distribution.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{WatsonDistribution$get_axis()}\if{html}{\out{</div>}}
+\subsection{\code{WatsonDistribution$get_axis()}}{
+  Retrieves the mean axis of the Watson distribution.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{WatsonDistribution$get_axis()}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    A numeric vector of length 3 storing the mean axis of the Watson
+distribution.
+  }
 }
 
-\subsection{Returns}{
-A numeric vector of length 3 storing the mean axis of the Watson
-distribution.
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-WatsonDistribution-get_concentration"></a>}}
 \if{latex}{\out{\hypertarget{method-WatsonDistribution-get_concentration}{}}}
-\subsection{Method \code{get_concentration()}}{
-Retrieves the concentration parameter of the Watson
+\subsection{\code{WatsonDistribution$get_concentration()}}{
+  Retrieves the concentration parameter of the Watson
 distribution.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{WatsonDistribution$get_concentration()}\if{html}{\out{</div>}}
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{WatsonDistribution$get_concentration()}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    A numeric value storing the concentration parameter of the Watson
+distribution.
+  }
 }
 
-\subsection{Returns}{
-A numeric value storing the concentration parameter of the Watson
-distribution.
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-WatsonDistribution-clone"></a>}}
 \if{latex}{\out{\hypertarget{method-WatsonDistribution-clone}{}}}
-\subsection{Method \code{clone()}}{
-The objects of this class are cloneable with this method.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{WatsonDistribution$clone(deep = FALSE)}\if{html}{\out{</div>}}
+\subsection{\code{WatsonDistribution$clone()}}{
+  The objects of this class are cloneable with this method.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{WatsonDistribution$clone(deep = FALSE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{deep}}{Whether to make a deep clone.}
-}
-\if{html}{\out{</div>}}
-}
-}
 }

@@ -20,5 +20,10 @@ Useful links:
 \author{
 \strong{Maintainer}: Aymeric Stamm \email{aymeric.stamm@cnrs.fr} (\href{https://orcid.org/0000-0002-8725-3654}{ORCID})
 
+Authors:
+\itemize{
+  \item Aymeric Stamm \email{aymeric.stamm@cnrs.fr} (\href{https://orcid.org/0000-0002-8725-3654}{ORCID})
+}
+
 }
 \keyword{internal}

@@ -67,14 +67,13 @@ CylinderBundleCompartment <- R6::R6Class(
       private$cylinder_compartments <- cylinder_compartments
 
       # Retrieve parameters from the cylinder compartments
-      params <- cylinder_compartments |>
-        purrr::map(\(comp) {
+      params <- purrr::map(cylinder_compartments, function(comp) {
           if (!inherits(comp, "CylinderCompartment")) {
             cli::cli_abort("All compartments must be of class CylinderCompartment.")
           }
           comp$get_parameters()
-        }) |>
-        purrr::list_transpose()
+        })
+      params <- purrr::list_transpose(params)
 
       # Then, extract axis sample and fit Watson distribution
       wd <- WatsonDistribution$new()
@@ -158,7 +157,7 @@ CylinderBundleCompartment <- R6::R6Class(
       }
       cylinder_contribs <- purrr::map_dbl(
         .x = private$cylinder_compartments,
-        .f = \(compartment) {
+        .f = function(compartment) {
           compartment$get_signal(
             small_delta = small_delta,
             big_delta = big_delta,

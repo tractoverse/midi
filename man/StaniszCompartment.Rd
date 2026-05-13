@@ -13,39 +13,39 @@ Stanisz, G. J., Wright, G. A., Henkelman, R. M., & Szafer, A.
 Magnetic Resonance in Medicine, 37(1), 103-111.
 }
 \section{Super classes}{
-\code{\link[midi:BaseCompartment]{midi::BaseCompartment}} -> \code{\link[midi:CircularlyShapedCompartment]{midi::CircularlyShapedCompartment}} -> \code{StaniszCompartment}
+\code{\link[midi:BaseCompartment]{BaseCompartment}} -> \code{\link[midi:CircularlyShapedCompartment]{CircularlyShapedCompartment}} -> \code{StaniszCompartment}
 }
 \section{Methods}{
 \subsection{Public methods}{
-\itemize{
-\item \href{#method-StaniszCompartment-clone}{\code{StaniszCompartment$clone()}}
+  \itemize{
+    \item \href{#method-StaniszCompartment-clone}{\code{StaniszCompartment$clone()}}
+  }
 }
-}
-\if{html}{\out{
-<details open><summary>Inherited methods</summary>
+\if{html}{\out{<details open><summary>Inherited methods</summary>
 <ul>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>midi::BaseCompartment$get_parameter_names()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>midi::BaseCompartment$get_parameters()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>midi::BaseCompartment$get_signal()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="CircularlyShapedCompartment" data-id="initialize"><a href='../../midi/html/CircularlyShapedCompartment.html#method-CircularlyShapedCompartment-initialize'><code>midi::CircularlyShapedCompartment$initialize()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>BaseCompartment$get_parameter_names()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>BaseCompartment$get_parameters()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>BaseCompartment$get_signal()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="CircularlyShapedCompartment" data-id="initialize"><a href='../../midi/html/CircularlyShapedCompartment.html#method-CircularlyShapedCompartment-initialize'><code>CircularlyShapedCompartment$initialize()</code></a></span></li>
 </ul>
-</details>
-}}
+</details>}}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-StaniszCompartment-clone"></a>}}
 \if{latex}{\out{\hypertarget{method-StaniszCompartment-clone}{}}}
-\subsection{Method \code{clone()}}{
-The objects of this class are cloneable with this method.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{StaniszCompartment$clone(deep = FALSE)}\if{html}{\out{</div>}}
+\subsection{\code{StaniszCompartment$clone()}}{
+  The objects of this class are cloneable with this method.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{StaniszCompartment$clone(deep = FALSE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{deep}}{Whether to make a deep clone.}
-}
-\if{html}{\out{</div>}}
-}
-}
 }

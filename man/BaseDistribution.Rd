@@ -11,96 +11,106 @@ distribution to data and generating random samples.
 \keyword{internal}
 \section{Methods}{
 \subsection{Public methods}{
-\itemize{
-\item \href{#method-BaseDistribution-fit}{\code{BaseDistribution$fit()}}
-\item \href{#method-BaseDistribution-random}{\code{BaseDistribution$random()}}
-\item \href{#method-BaseDistribution-get_mean}{\code{BaseDistribution$get_mean()}}
-\item \href{#method-BaseDistribution-get_variance}{\code{BaseDistribution$get_variance()}}
-\item \href{#method-BaseDistribution-clone}{\code{BaseDistribution$clone()}}
-}
+  \itemize{
+    \item \href{#method-BaseDistribution-fit}{\code{BaseDistribution$fit()}}
+    \item \href{#method-BaseDistribution-random}{\code{BaseDistribution$random()}}
+    \item \href{#method-BaseDistribution-get_mean}{\code{BaseDistribution$get_mean()}}
+    \item \href{#method-BaseDistribution-get_variance}{\code{BaseDistribution$get_variance()}}
+    \item \href{#method-BaseDistribution-clone}{\code{BaseDistribution$clone()}}
+  }
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-BaseDistribution-fit"></a>}}
 \if{latex}{\out{\hypertarget{method-BaseDistribution-fit}{}}}
-\subsection{Method \code{fit()}}{
-Fit the distribution to the data.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{BaseDistribution$fit(x)}\if{html}{\out{</div>}}
+\subsection{\code{BaseDistribution$fit()}}{
+  Fit the distribution to the data.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{BaseDistribution$fit(x)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{x}}{A numeric vector of data to fit the distribution to.}
+    }
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    Internally sets the parameters of the distribution. Returns
+nothing.
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{x}}{A numeric vector of data to fit the distribution to.}
-}
-\if{html}{\out{</div>}}
-}
-\subsection{Returns}{
-Internally sets the parameters of the distribution. Returns
-nothing.
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-BaseDistribution-random"></a>}}
 \if{latex}{\out{\hypertarget{method-BaseDistribution-random}{}}}
-\subsection{Method \code{random()}}{
-Generate random samples from the distribution.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{BaseDistribution$random(n)}\if{html}{\out{</div>}}
+\subsection{\code{BaseDistribution$random()}}{
+  Generate random samples from the distribution.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{BaseDistribution$random(n)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{n}}{An integer specifying the number of samples to generate.}
+    }
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    A numeric vector of size \code{n} containing the random samples.
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{n}}{An integer specifying the number of samples to generate.}
-}
-\if{html}{\out{</div>}}
-}
-\subsection{Returns}{
-A numeric vector of size \code{n} containing the random samples.
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-BaseDistribution-get_mean"></a>}}
 \if{latex}{\out{\hypertarget{method-BaseDistribution-get_mean}{}}}
-\subsection{Method \code{get_mean()}}{
-Compute the mean of the distribution.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{BaseDistribution$get_mean()}\if{html}{\out{</div>}}
+\subsection{\code{BaseDistribution$get_mean()}}{
+  Compute the mean of the distribution.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{BaseDistribution$get_mean()}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    A numeric value storing the mean of the distribution.
+  }
 }
 
-\subsection{Returns}{
-A numeric value storing the mean of the distribution.
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-BaseDistribution-get_variance"></a>}}
 \if{latex}{\out{\hypertarget{method-BaseDistribution-get_variance}{}}}
-\subsection{Method \code{get_variance()}}{
-Compute the variance of the distribution.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{BaseDistribution$get_variance()}\if{html}{\out{</div>}}
+\subsection{\code{BaseDistribution$get_variance()}}{
+  Compute the variance of the distribution.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{BaseDistribution$get_variance()}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    A numeric value storing the variance of the distribution.
+  }
 }
 
-\subsection{Returns}{
-A numeric value storing the variance of the distribution.
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-BaseDistribution-clone"></a>}}
 \if{latex}{\out{\hypertarget{method-BaseDistribution-clone}{}}}
-\subsection{Method \code{clone()}}{
-The objects of this class are cloneable with this method.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{BaseDistribution$clone(deep = FALSE)}\if{html}{\out{</div>}}
+\subsection{\code{BaseDistribution$clone()}}{
+  The objects of this class are cloneable with this method.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{BaseDistribution$clone(deep = FALSE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{deep}}{Whether to make a deep clone.}
-}
-\if{html}{\out{</div>}}
-}
-}
 }

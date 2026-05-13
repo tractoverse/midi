@@ -13,67 +13,68 @@ cylComp$get_parameter_names()
 cylComp$get_parameters()
 }
 \section{Super classes}{
-\code{\link[midi:BaseCompartment]{midi::BaseCompartment}} -> \code{\link[midi:CircularlyShapedCompartment]{midi::CircularlyShapedCompartment}} -> \code{CylinderCompartment}
+\code{\link[midi:BaseCompartment]{BaseCompartment}} -> \code{\link[midi:CircularlyShapedCompartment]{CircularlyShapedCompartment}} -> \code{CylinderCompartment}
 }
 \section{Methods}{
 \subsection{Public methods}{
-\itemize{
-\item \href{#method-CylinderCompartment-new}{\code{CylinderCompartment$new()}}
-\item \href{#method-CylinderCompartment-clone}{\code{CylinderCompartment$clone()}}
+  \itemize{
+    \item \href{#method-CylinderCompartment-initialize}{\code{CylinderCompartment$new()}}
+    \item \href{#method-CylinderCompartment-clone}{\code{CylinderCompartment$clone()}}
+  }
 }
-}
-\if{html}{\out{
-<details open><summary>Inherited methods</summary>
+\if{html}{\out{<details open><summary>Inherited methods</summary>
 <ul>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>midi::BaseCompartment$get_parameter_names()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>midi::BaseCompartment$get_parameters()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>midi::BaseCompartment$get_signal()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>BaseCompartment$get_parameter_names()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>BaseCompartment$get_parameters()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>BaseCompartment$get_signal()</code></a></span></li>
 </ul>
-</details>
-}}
+</details>}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-CylinderCompartment-new"></a>}}
-\if{latex}{\out{\hypertarget{method-CylinderCompartment-new}{}}}
-\subsection{Method \code{new()}}{
-Instantiates a new cylinder compartment.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CylinderCompartment$new(
+\if{html}{\out{<a id="method-CylinderCompartment-initialize"></a>}}
+\if{latex}{\out{\hypertarget{method-CylinderCompartment-initialize}{}}}
+\subsection{\code{CylinderCompartment$new()}}{
+  Instantiates a new cylinder compartment.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{CylinderCompartment$new(
   axis = c(0, 0, 1),
   restricted_compartment = VanGelderenCompartment$new()
-)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{axis}}{A length-3 numeric vector specifying the axis of the
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{axis}}{A length-3 numeric vector specifying the axis of the
 cylinder.}
-
-\item{\code{restricted_compartment}}{An instance of the
+      \item{\code{restricted_compartment}}{An instance of the
 \code{\link{CircularlyShapedCompartment}} class specifying the restricted
 compartment within the sphere. Defaults to a Van Gelderen compartment.}
+    }
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    An instance of the \code{\link{CylinderCompartment}} class.
+  }
 }
-\if{html}{\out{</div>}}
-}
-\subsection{Returns}{
-An instance of the \code{\link{CylinderCompartment}} class.
-}
-}
+
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-CylinderCompartment-clone"></a>}}
 \if{latex}{\out{\hypertarget{method-CylinderCompartment-clone}{}}}
-\subsection{Method \code{clone()}}{
-The objects of this class are cloneable with this method.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CylinderCompartment$clone(deep = FALSE)}\if{html}{\out{</div>}}
+\subsection{\code{CylinderCompartment$clone()}}{
+  The objects of this class are cloneable with this method.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{CylinderCompartment$clone(deep = FALSE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{deep}}{Whether to make a deep clone.}
-}
-\if{html}{\out{</div>}}
-}
-}
 }

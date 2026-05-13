@@ -13,61 +13,63 @@ sphComp$get_parameter_names()
 sphComp$get_parameters()
 }
 \section{Super classes}{
-\code{\link[midi:BaseCompartment]{midi::BaseCompartment}} -> \code{\link[midi:CircularlyShapedCompartment]{midi::CircularlyShapedCompartment}} -> \code{SphereCompartment}
+\code{\link[midi:BaseCompartment]{BaseCompartment}} -> \code{\link[midi:CircularlyShapedCompartment]{CircularlyShapedCompartment}} -> \code{SphereCompartment}
 }
 \section{Methods}{
 \subsection{Public methods}{
-\itemize{
-\item \href{#method-SphereCompartment-new}{\code{SphereCompartment$new()}}
-\item \href{#method-SphereCompartment-clone}{\code{SphereCompartment$clone()}}
+  \itemize{
+    \item \href{#method-SphereCompartment-initialize}{\code{SphereCompartment$new()}}
+    \item \href{#method-SphereCompartment-clone}{\code{SphereCompartment$clone()}}
+  }
 }
-}
-\if{html}{\out{
-<details open><summary>Inherited methods</summary>
+\if{html}{\out{<details open><summary>Inherited methods</summary>
 <ul>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>midi::BaseCompartment$get_parameter_names()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>midi::BaseCompartment$get_parameters()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>midi::BaseCompartment$get_signal()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>BaseCompartment$get_parameter_names()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>BaseCompartment$get_parameters()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>BaseCompartment$get_signal()</code></a></span></li>
 </ul>
-</details>
-}}
+</details>}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-SphereCompartment-new"></a>}}
-\if{latex}{\out{\hypertarget{method-SphereCompartment-new}{}}}
-\subsection{Method \code{new()}}{
-Instantiates a new sphere compartment.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{SphereCompartment$new(restricted_compartment = VanGelderenCompartment$new())}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{restricted_compartment}}{An instance of the
+\if{html}{\out{<a id="method-SphereCompartment-initialize"></a>}}
+\if{latex}{\out{\hypertarget{method-SphereCompartment-initialize}{}}}
+\subsection{\code{SphereCompartment$new()}}{
+  Instantiates a new sphere compartment.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{SphereCompartment$new(restricted_compartment = VanGelderenCompartment$new())}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{restricted_compartment}}{An instance of the
 \code{\link{CircularlyShapedCompartment}} class specifying the restricted
 compartment within the sphere. Defaults to a Van Gelderen compartment.}
+    }
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    An instance of the \code{\link{SphereCompartment}} class.
+  }
 }
-\if{html}{\out{</div>}}
-}
-\subsection{Returns}{
-An instance of the \code{\link{SphereCompartment}} class.
-}
-}
+
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-SphereCompartment-clone"></a>}}
 \if{latex}{\out{\hypertarget{method-SphereCompartment-clone}{}}}
-\subsection{Method \code{clone()}}{
-The objects of this class are cloneable with this method.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{SphereCompartment$clone(deep = FALSE)}\if{html}{\out{</div>}}
+\subsection{\code{SphereCompartment$clone()}}{
+  The objects of this class are cloneable with this method.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{SphereCompartment$clone(deep = FALSE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{deep}}{Whether to make a deep clone.}
-}
-\if{html}{\out{</div>}}
-}
-}
 }

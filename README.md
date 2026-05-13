@@ -7,9 +7,8 @@
 
 [![R-CMD-check](https://github.com/LMJL-Alea/midi/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/LMJL-Alea/midi/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/lmjl-alea/midi/branch/main/graph/badge.svg)](https://app.codecov.io/gh/lmjl-alea/midi?branch=main)
-[![test-coverage](https://github.com/lmjl-alea/midi/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/lmjl-alea/midi/actions/workflows/test-coverage.yaml)
-[![pkgdown](https://github.com/lmjl-alea/midi/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/lmjl-alea/midi/actions/workflows/pkgdown.yaml)
+coverage](https://codecov.io/gh/LMJL-Alea/midi/graph/badge.svg)](https://app.codecov.io/gh/LMJL-Alea/midi)
+[![pkgdown](https://github.com/LMJL-Alea/midi/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/LMJL-Alea/midi/actions/workflows/pkgdown.yaml)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/midi)](https://CRAN.R-project.org/package=midi)
 <!-- badges: end -->
@@ -132,7 +131,7 @@ cylComp$get_signal(
   G = 0.040, # uT/um
   direction = c(0, 0, 1)
 )
-#> [1] 0.002055938
+#> [1] 0.002063224
 ```
 
 We can also simulate and visualize cylinder bundles:
@@ -144,7 +143,7 @@ out <- simulate_bundle(density, voxel_size)
 plot(out)
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" alt="" width="100%" />
 
 A 3D visualization of the cylinder bundle powered by the
 [**plotly**](https://plotly.com/r/) package can be obtained by calling

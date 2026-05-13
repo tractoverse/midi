@@ -58,7 +58,7 @@ rcylinders <- function(n, axis_mean, radius_mean, diffusivity_mean,
 
   # Produce axis sample
   if (is.infinite(axis_concentration)) {
-    axis_sample <- purrr::map(1:n, \(.n) axis_mean)
+    axis_sample <- purrr::map(1:n, function(.n) axis_mean)
   } else {
     wd <- WatsonDistribution$new(mu = axis_mean, kappa = axis_concentration)
     axis_sample <- wd$random(n)
@@ -87,7 +87,7 @@ rcylinders <- function(n, axis_mean, radius_mean, diffusivity_mean,
   # Creates cylinder compartments
   purrr::pmap(
     .l = list(axis_sample, radius_sample, diffusivity_sample),
-    .f = \(.axis, .radius, .diffusivity) {
+    .f = function(.axis, .radius, .diffusivity) {
       restr_comp <- switch(
         restricted_model,
         Callaghan = CallaghanCompartment$new(

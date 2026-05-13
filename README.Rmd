@@ -17,9 +17,8 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/LMJL-Alea/midi/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/LMJL-Alea/midi/actions/workflows/R-CMD-check.yaml)
-[![Codecov test coverage](https://codecov.io/gh/lmjl-alea/midi/branch/main/graph/badge.svg)](https://app.codecov.io/gh/lmjl-alea/midi?branch=main)
-[![test-coverage](https://github.com/lmjl-alea/midi/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/lmjl-alea/midi/actions/workflows/test-coverage.yaml)
-[![pkgdown](https://github.com/lmjl-alea/midi/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/lmjl-alea/midi/actions/workflows/pkgdown.yaml)
+[![Codecov test coverage](https://codecov.io/gh/LMJL-Alea/midi/graph/badge.svg)](https://app.codecov.io/gh/LMJL-Alea/midi)
+[![pkgdown](https://github.com/LMJL-Alea/midi/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/LMJL-Alea/midi/actions/workflows/pkgdown.yaml)
 [![CRAN status](https://www.r-pkg.org/badges/version/midi)](https://CRAN.R-project.org/package=midi)
 <!-- badges: end -->
 

@@ -193,18 +193,18 @@ WatsonDistribution <- R6::R6Class(
         private$kappa <- Inf
       } else {
         private$kappa <- stats::uniroot(
-          f = \(.x) concentration_index(.x) - private$r,
+          f = function(.x) concentration_index(.x) - private$r,
           interval = c(0, 100)
         )$root
       }
     },
     random_impl = function(n) {
-      if (private$kappa == Inf) return(purrr::map(1:n, \(.n) private$mu))
+      if (private$kappa == Inf) return(purrr::map(1:n, function(.n) private$mu))
 
       # Computes rotation matrix that brings z-axis to mu
       R <- rotation_matrix_from_z_to_mu(private$mu)
 
-      purrr::map(1:n, \(.n) {
+      purrr::map(1:n, function(.n) {
         if (private$kappa > sqrt(.Machine$double.eps)) {
           U <- stats::runif(1)
           S <- 1 + log(U + (1 - U) * exp(-private$kappa)) / private$kappa

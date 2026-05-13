@@ -12,39 +12,39 @@ Neuman, C. H. (1974). Spin echo of spins diffusing in a bounded
 medium. The Journal of Chemical Physics, 60(11), 4508-4511.
 }
 \section{Super classes}{
-\code{\link[midi:BaseCompartment]{midi::BaseCompartment}} -> \code{\link[midi:CircularlyShapedCompartment]{midi::CircularlyShapedCompartment}} -> \code{NeumanCompartment}
+\code{\link[midi:BaseCompartment]{BaseCompartment}} -> \code{\link[midi:CircularlyShapedCompartment]{CircularlyShapedCompartment}} -> \code{NeumanCompartment}
 }
 \section{Methods}{
 \subsection{Public methods}{
-\itemize{
-\item \href{#method-NeumanCompartment-clone}{\code{NeumanCompartment$clone()}}
+  \itemize{
+    \item \href{#method-NeumanCompartment-clone}{\code{NeumanCompartment$clone()}}
+  }
 }
-}
-\if{html}{\out{
-<details open><summary>Inherited methods</summary>
+\if{html}{\out{<details open><summary>Inherited methods</summary>
 <ul>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>midi::BaseCompartment$get_parameter_names()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>midi::BaseCompartment$get_parameters()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>midi::BaseCompartment$get_signal()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="CircularlyShapedCompartment" data-id="initialize"><a href='../../midi/html/CircularlyShapedCompartment.html#method-CircularlyShapedCompartment-initialize'><code>midi::CircularlyShapedCompartment$initialize()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>BaseCompartment$get_parameter_names()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>BaseCompartment$get_parameters()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>BaseCompartment$get_signal()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="CircularlyShapedCompartment" data-id="initialize"><a href='../../midi/html/CircularlyShapedCompartment.html#method-CircularlyShapedCompartment-initialize'><code>CircularlyShapedCompartment$initialize()</code></a></span></li>
 </ul>
-</details>
-}}
+</details>}}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-NeumanCompartment-clone"></a>}}
 \if{latex}{\out{\hypertarget{method-NeumanCompartment-clone}{}}}
-\subsection{Method \code{clone()}}{
-The objects of this class are cloneable with this method.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{NeumanCompartment$clone(deep = FALSE)}\if{html}{\out{</div>}}
+\subsection{\code{NeumanCompartment$clone()}}{
+  The objects of this class are cloneable with this method.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{NeumanCompartment$clone(deep = FALSE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{deep}}{Whether to make a deep clone.}
-}
-\if{html}{\out{</div>}}
-}
-}
 }

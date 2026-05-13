@@ -9,63 +9,64 @@ described by a circular shape with a given radius.
 }
 \keyword{internal}
 \section{Super class}{
-\code{\link[midi:BaseCompartment]{midi::BaseCompartment}} -> \code{CircularlyShapedCompartment}
+\code{\link[midi:BaseCompartment]{BaseCompartment}} -> \code{CircularlyShapedCompartment}
 }
 \section{Methods}{
 \subsection{Public methods}{
-\itemize{
-\item \href{#method-CircularlyShapedCompartment-new}{\code{CircularlyShapedCompartment$new()}}
-\item \href{#method-CircularlyShapedCompartment-clone}{\code{CircularlyShapedCompartment$clone()}}
+  \itemize{
+    \item \href{#method-CircularlyShapedCompartment-initialize}{\code{CircularlyShapedCompartment$new()}}
+    \item \href{#method-CircularlyShapedCompartment-clone}{\code{CircularlyShapedCompartment$clone()}}
+  }
 }
-}
-\if{html}{\out{
-<details open><summary>Inherited methods</summary>
+\if{html}{\out{<details open><summary>Inherited methods</summary>
 <ul>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>midi::BaseCompartment$get_parameter_names()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>midi::BaseCompartment$get_parameters()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>midi::BaseCompartment$get_signal()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>BaseCompartment$get_parameter_names()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>BaseCompartment$get_parameters()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>BaseCompartment$get_signal()</code></a></span></li>
 </ul>
-</details>
-}}
+</details>}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-CircularlyShapedCompartment-new"></a>}}
-\if{latex}{\out{\hypertarget{method-CircularlyShapedCompartment-new}{}}}
-\subsection{Method \code{new()}}{
-Instantiates a new circular compartment.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CircularlyShapedCompartment$new(radius = NULL, diffusivity = NULL)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{radius}}{A numeric value specifying the radius of the sphere in
+\if{html}{\out{<a id="method-CircularlyShapedCompartment-initialize"></a>}}
+\if{latex}{\out{\hypertarget{method-CircularlyShapedCompartment-initialize}{}}}
+\subsection{\code{CircularlyShapedCompartment$new()}}{
+  Instantiates a new circular compartment.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{CircularlyShapedCompartment$new(radius = NULL, diffusivity = NULL)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{radius}}{A numeric value specifying the radius of the sphere in
 \eqn{\mu}m.}
-
-\item{\code{diffusivity}}{A numeric value specifying the diffusivity within the
+      \item{\code{diffusivity}}{A numeric value specifying the diffusivity within the
 sphere in \eqn{\mu}m\eqn{^2}.ms\eqn{^{-1}}.}
+    }
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    An instance of the \code{\link{CircularlyShapedCompartment}} class.
+  }
 }
-\if{html}{\out{</div>}}
-}
-\subsection{Returns}{
-An instance of the \code{\link{CircularlyShapedCompartment}} class.
-}
-}
+
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-CircularlyShapedCompartment-clone"></a>}}
 \if{latex}{\out{\hypertarget{method-CircularlyShapedCompartment-clone}{}}}
-\subsection{Method \code{clone()}}{
-The objects of this class are cloneable with this method.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CircularlyShapedCompartment$clone(deep = FALSE)}\if{html}{\out{</div>}}
+\subsection{\code{CircularlyShapedCompartment$clone()}}{
+  The objects of this class are cloneable with this method.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{CircularlyShapedCompartment$clone(deep = FALSE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{deep}}{Whether to make a deep clone.}
-}
-\if{html}{\out{</div>}}
-}
-}
 }

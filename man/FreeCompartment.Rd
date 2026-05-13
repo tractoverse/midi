@@ -7,62 +7,64 @@
 A class to model free unconstrained diffusion.
 }
 \section{Super class}{
-\code{\link[midi:BaseCompartment]{midi::BaseCompartment}} -> \code{FreeCompartment}
+\code{\link[midi:BaseCompartment]{BaseCompartment}} -> \code{FreeCompartment}
 }
 \section{Methods}{
 \subsection{Public methods}{
-\itemize{
-\item \href{#method-FreeCompartment-new}{\code{FreeCompartment$new()}}
-\item \href{#method-FreeCompartment-clone}{\code{FreeCompartment$clone()}}
+  \itemize{
+    \item \href{#method-FreeCompartment-initialize}{\code{FreeCompartment$new()}}
+    \item \href{#method-FreeCompartment-clone}{\code{FreeCompartment$clone()}}
+  }
 }
-}
-\if{html}{\out{
-<details open><summary>Inherited methods</summary>
+\if{html}{\out{<details open><summary>Inherited methods</summary>
 <ul>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>midi::BaseCompartment$get_parameter_names()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>midi::BaseCompartment$get_parameters()</code></a></span></li>
-<li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>midi::BaseCompartment$get_signal()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameter_names"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameter_names'><code>BaseCompartment$get_parameter_names()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_parameters"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_parameters'><code>BaseCompartment$get_parameters()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="midi" data-topic="BaseCompartment" data-id="get_signal"><a href='../../midi/html/BaseCompartment.html#method-BaseCompartment-get_signal'><code>BaseCompartment$get_signal()</code></a></span></li>
 </ul>
-</details>
-}}
+</details>}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-FreeCompartment-new"></a>}}
-\if{latex}{\out{\hypertarget{method-FreeCompartment-new}{}}}
-\subsection{Method \code{new()}}{
-Instantiates a new free compartment.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{FreeCompartment$new(diffusivity = NULL)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{diffusivity}}{A numeric value specifying the diffusivity within the
+\if{html}{\out{<a id="method-FreeCompartment-initialize"></a>}}
+\if{latex}{\out{\hypertarget{method-FreeCompartment-initialize}{}}}
+\subsection{\code{FreeCompartment$new()}}{
+  Instantiates a new free compartment.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{FreeCompartment$new(diffusivity = NULL)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{diffusivity}}{A numeric value specifying the diffusivity within the
 sphere in \eqn{\mu}m\eqn{^2}.ms\eqn{^{-1}}. Defaults to \code{NULL}, in
 which case the default free diffusivity of 3
 \eqn{\mu}m\eqn{^2}.ms\eqn{^{-1}} is used.}
+    }
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Returns}{
+    An instance of the \code{\link{FreeCompartment}} class.
+  }
 }
-\if{html}{\out{</div>}}
-}
-\subsection{Returns}{
-An instance of the \code{\link{FreeCompartment}} class.
-}
-}
+
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-FreeCompartment-clone"></a>}}
 \if{latex}{\out{\hypertarget{method-FreeCompartment-clone}{}}}
-\subsection{Method \code{clone()}}{
-The objects of this class are cloneable with this method.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{FreeCompartment$clone(deep = FALSE)}\if{html}{\out{</div>}}
+\subsection{\code{FreeCompartment$clone()}}{
+  The objects of this class are cloneable with this method.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{FreeCompartment$clone(deep = FALSE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{deep}}{Whether to make a deep clone.}
-}
-\if{html}{\out{</div>}}
-}
-}
 }
