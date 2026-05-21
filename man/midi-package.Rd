@@ -11,9 +11,9 @@ An implementation of a taxonomy of models of restricted diffusion in biological 
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/lmjl-alea/midi}
-  \item \url{https://lmjl-alea.github.io/midi/}
-  \item Report bugs at \url{https://github.com/lmjl-alea/midi/issues}
+  \item \url{https://github.com/tractoverse/midi}
+  \item \url{https://tractoverse.github.io/midi/}
+  \item Report bugs at \url{https://github.com/tractoverse/midi/issues}
 }
 
 }

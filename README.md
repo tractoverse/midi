@@ -5,10 +5,10 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/LMJL-Alea/midi/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/LMJL-Alea/midi/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/tractoverse/midi/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tractoverse/midi/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/LMJL-Alea/midi/graph/badge.svg)](https://app.codecov.io/gh/LMJL-Alea/midi)
-[![pkgdown](https://github.com/LMJL-Alea/midi/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/LMJL-Alea/midi/actions/workflows/pkgdown.yaml)
+coverage](https://codecov.io/gh/tractoverse/midi/graph/badge.svg)](https://app.codecov.io/gh/tractoverse/midi)
+[![pkgdown](https://github.com/tractoverse/midi/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/tractoverse/midi/actions/workflows/pkgdown.yaml)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/midi)](https://CRAN.R-project.org/package=midi)
 <!-- badges: end -->
@@ -50,7 +50,7 @@ millimeters, therefore containing many different tissue types. In
 addition, depending on the experimental conditions (number, duration and
 strength of the gradients and time between two consecutive gradients),
 the MR signal might not be sensitive to all tissue types in the voxel.
-The [**midi**](https://lmjl-alea.github.io/midi/) package is meant to
+The [**midi**](https://tractoverse.github.io/midi/) package is meant to
 list the tissue models that have been proposed in the literature and to
 provide tools to simulate the MR signal attenuation predicted by these
 models under different experimental conditions.
@@ -78,7 +78,7 @@ You can install the development version of midi from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("lmjl-alea/midi")
+devtools::install_github("tractoverse/midi")
 ```
 
 ## Example
@@ -148,5 +148,5 @@ plot(out)
 A 3D visualization of the cylinder bundle powered by the
 [**plotly**](https://plotly.com/r/) package can be obtained by calling
 `plot3d()`. See the documentation online at
-<https://lmjl-alea.github.io/midi/reference/plot3d.html> for more
+<https://tractoverse.github.io/midi/reference/plot3d.html> for more
 details.
