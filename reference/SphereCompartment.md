@@ -4,9 +4,9 @@ A class to model restricted diffusion in a sphere.
 
 ## Super classes
 
-[`BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
+[`BaseCompartment`](https://tractoverse.github.io/midi/reference/BaseCompartment.md)
 -\>
-[`CircularlyShapedCompartment`](https://lmjl-alea.github.io/midi/reference/CircularlyShapedCompartment.md)
+[`CircularlyShapedCompartment`](https://tractoverse.github.io/midi/reference/CircularlyShapedCompartment.md)
 -\> `SphereCompartment`
 
 ## Methods
@@ -19,9 +19,9 @@ A class to model restricted diffusion in a sphere.
 
 Inherited methods
 
-- [`BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
-- [`BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
-- [`BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
+- [`BaseCompartment$get_parameter_names()`](https://tractoverse.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
+- [`BaseCompartment$get_parameters()`](https://tractoverse.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
+- [`BaseCompartment$get_signal()`](https://tractoverse.github.io/midi/reference/BaseCompartment.html#method-get_signal)
 
 ------------------------------------------------------------------------
 
@@ -38,7 +38,7 @@ Instantiates a new sphere compartment.
 - `restricted_compartment`:
 
   An instance of the
-  [`CircularlyShapedCompartment`](https://lmjl-alea.github.io/midi/reference/CircularlyShapedCompartment.md)
+  [`CircularlyShapedCompartment`](https://tractoverse.github.io/midi/reference/CircularlyShapedCompartment.md)
   class specifying the restricted compartment within the sphere.
   Defaults to a Van Gelderen compartment.
 

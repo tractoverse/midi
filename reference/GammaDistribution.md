@@ -5,7 +5,7 @@ fitting the distribution to data and generating random samples.
 
 ## Super class
 
-[`BaseDistribution`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.md)
+[`BaseDistribution`](https://tractoverse.github.io/midi/reference/BaseDistribution.md)
 -\> `GammaDistribution`
 
 ## Methods
@@ -22,10 +22,10 @@ fitting the distribution to data and generating random samples.
 
 Inherited methods
 
-- [`BaseDistribution$fit()`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.html#method-fit)
-- [`BaseDistribution$get_mean()`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.html#method-get_mean)
-- [`BaseDistribution$get_variance()`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.html#method-get_variance)
-- [`BaseDistribution$random()`](https://lmjl-alea.github.io/midi/reference/BaseDistribution.html#method-random)
+- [`BaseDistribution$fit()`](https://tractoverse.github.io/midi/reference/BaseDistribution.html#method-fit)
+- [`BaseDistribution$get_mean()`](https://tractoverse.github.io/midi/reference/BaseDistribution.html#method-get_mean)
+- [`BaseDistribution$get_variance()`](https://tractoverse.github.io/midi/reference/BaseDistribution.html#method-get_variance)
+- [`BaseDistribution$random()`](https://tractoverse.github.io/midi/reference/BaseDistribution.html#method-random)
 
 ------------------------------------------------------------------------
 

@@ -4,7 +4,7 @@ A class to model restricted diffusion in a bundle of cylinders.
 
 ## Super class
 
-[`BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
+[`BaseCompartment`](https://tractoverse.github.io/midi/reference/BaseCompartment.md)
 -\> `CylinderBundleCompartment`
 
 ## Methods
@@ -17,9 +17,9 @@ A class to model restricted diffusion in a bundle of cylinders.
 
 Inherited methods
 
-- [`BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
-- [`BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
-- [`BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
+- [`BaseCompartment$get_parameter_names()`](https://tractoverse.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
+- [`BaseCompartment$get_parameters()`](https://tractoverse.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
+- [`BaseCompartment$get_signal()`](https://tractoverse.github.io/midi/reference/BaseCompartment.html#method-get_signal)
 
 ------------------------------------------------------------------------
 
@@ -46,7 +46,7 @@ Instantiates a new cylinder bundle compartment.
 - `cylinder_compartments`:
 
   A list of instances of the
-  [`CylinderCompartment`](https://lmjl-alea.github.io/midi/reference/CylinderCompartment.md)
+  [`CylinderCompartment`](https://tractoverse.github.io/midi/reference/CylinderCompartment.md)
   class specifying the compartments within the bundle.
 
 - `axial_diffusivity`:

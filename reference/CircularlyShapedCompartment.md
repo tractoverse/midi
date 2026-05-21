@@ -5,7 +5,7 @@ circular shape with a given radius.
 
 ## Super class
 
-[`BaseCompartment`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.md)
+[`BaseCompartment`](https://tractoverse.github.io/midi/reference/BaseCompartment.md)
 -\> `CircularlyShapedCompartment`
 
 ## Methods
@@ -18,9 +18,9 @@ circular shape with a given radius.
 
 Inherited methods
 
-- [`BaseCompartment$get_parameter_names()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
-- [`BaseCompartment$get_parameters()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
-- [`BaseCompartment$get_signal()`](https://lmjl-alea.github.io/midi/reference/BaseCompartment.html#method-get_signal)
+- [`BaseCompartment$get_parameter_names()`](https://tractoverse.github.io/midi/reference/BaseCompartment.html#method-get_parameter_names)
+- [`BaseCompartment$get_parameters()`](https://tractoverse.github.io/midi/reference/BaseCompartment.html#method-get_parameters)
+- [`BaseCompartment$get_signal()`](https://tractoverse.github.io/midi/reference/BaseCompartment.html#method-get_signal)
 
 ------------------------------------------------------------------------
 

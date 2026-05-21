@@ -37,7 +37,7 @@ millimeters, therefore containing many different tissue types. In
 addition, depending on the experimental conditions (number, duration and
 strength of the gradients and time between two consecutive gradients),
 the MR signal might not be sensitive to all tissue types in the voxel.
-The [**midi**](https://lmjl-alea.github.io/midi/) package is meant to
+The [**midi**](https://tractoverse.github.io/midi/) package is meant to
 list the tissue models that have been proposed in the literature and to
 provide tools to simulate the MR signal attenuation predicted by these
 models under different experimental conditions.
@@ -48,7 +48,7 @@ interactively visualize the MR signal attenuation induced by the
 different tissue models and design experimental conditions to optimize
 the sensitivity to specific tissue parameters. The Shiny web application
 can be launched with the
-[`midi::run_app()`](https://lmjl-alea.github.io/midi/reference/run_app.md)
+[`midi::run_app()`](https://tractoverse.github.io/midi/reference/run_app.md)
 function for convenience but can be directly accessed at the following
 URL: <https://midi-pastrami.apps.math.cnrs.fr/>.
 
@@ -68,7 +68,7 @@ You can install the development version of midi from
 ``` r
 
 # install.packages("devtools")
-devtools::install_github("lmjl-alea/midi")
+devtools::install_github("tractoverse/midi")
 ```
 
 ## Example
@@ -141,7 +141,7 @@ plot(out)
 
 A 3D visualization of the cylinder bundle powered by the
 [**plotly**](https://plotly.com/r/) package can be obtained by calling
-[`plot3d()`](https://lmjl-alea.github.io/midi/reference/plot3d.md). See
-the documentation online at
-<https://lmjl-alea.github.io/midi/reference/plot3d.html> for more
+[`plot3d()`](https://tractoverse.github.io/midi/reference/plot3d.md).
+See the documentation online at
+<https://tractoverse.github.io/midi/reference/plot3d.html> for more
 details.

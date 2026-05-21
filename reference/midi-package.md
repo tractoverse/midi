@@ -24,11 +24,11 @@ Callaghan (1995)
 
 Useful links:
 
-- <https://github.com/lmjl-alea/midi>
+- <https://github.com/tractoverse/midi>
 
-- <https://lmjl-alea.github.io/midi/>
+- <https://tractoverse.github.io/midi/>
 
-- Report bugs at <https://github.com/lmjl-alea/midi/issues>
+- Report bugs at <https://github.com/tractoverse/midi/issues>
 
 ## Author
 

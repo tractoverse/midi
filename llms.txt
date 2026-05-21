@@ -37,7 +37,7 @@ millimeters, therefore containing many different tissue types. In
 addition, depending on the experimental conditions (number, duration and
 strength of the gradients and time between two consecutive gradients),
 the MR signal might not be sensitive to all tissue types in the voxel.
-The [**midi**](https://lmjl-alea.github.io/midi/) package is meant to
+The [**midi**](https://tractoverse.github.io/midi/) package is meant to
 list the tissue models that have been proposed in the literature and to
 provide tools to simulate the MR signal attenuation predicted by these
 models under different experimental conditions.
@@ -48,7 +48,7 @@ interactively visualize the MR signal attenuation induced by the
 different tissue models and design experimental conditions to optimize
 the sensitivity to specific tissue parameters. The Shiny web application
 can be launched with the
-[`midi::run_app()`](https://lmjl-alea.github.io/midi/reference/run_app.md)
+[`midi::run_app()`](https://tractoverse.github.io/midi/reference/run_app.md)
 function for convenience but can be directly accessed at the following
 URL: <https://midi-pastrami.apps.math.cnrs.fr/>.
 
@@ -68,7 +68,7 @@ You can install the development version of midi from
 ``` r
 
 # install.packages("devtools")
-devtools::install_github("lmjl-alea/midi")
+devtools::install_github("tractoverse/midi")
 ```
 
 ## Example
@@ -141,27 +141,27 @@ plot(out)
 
 A 3D visualization of the cylinder bundle powered by the
 [**plotly**](https://plotly.com/r/) package can be obtained by calling
-[`plot3d()`](https://lmjl-alea.github.io/midi/reference/plot3d.md). See
-the documentation online at
-<https://lmjl-alea.github.io/midi/reference/plot3d.html> for more
+[`plot3d()`](https://tractoverse.github.io/midi/reference/plot3d.md).
+See the documentation online at
+<https://tractoverse.github.io/midi/reference/plot3d.html> for more
 details.
 
 # Package index
 
 ## Cylinder bundle simulation
 
-- [`simulate_bundle()`](https://lmjl-alea.github.io/midi/reference/simulate_bundle.md)
+- [`simulate_bundle()`](https://tractoverse.github.io/midi/reference/simulate_bundle.md)
   : Generates a cross section of a cylinder bundle
 
-- [`autoplot(`*`<bundle>`*`)`](https://lmjl-alea.github.io/midi/reference/autoplot.bundle.md)
+- [`autoplot(`*`<bundle>`*`)`](https://tractoverse.github.io/midi/reference/autoplot.bundle.md)
   :
 
   Plots a cross section of a cylinder bundle using **ggplot2**
 
-- [`plot(`*`<bundle>`*`)`](https://lmjl-alea.github.io/midi/reference/plot.bundle.md)
+- [`plot(`*`<bundle>`*`)`](https://tractoverse.github.io/midi/reference/plot.bundle.md)
   : Plots a cross section of a cylinder bundle
 
-- [`plot3d()`](https://lmjl-alea.github.io/midi/reference/plot3d.md) :
+- [`plot3d()`](https://tractoverse.github.io/midi/reference/plot3d.md) :
 
   Plots a 3D representation of a cylinder bundle using **plotly**
 
@@ -169,41 +169,41 @@ details.
 
 ### Models for restricted diffusion in circularly-shaped media
 
-- [`CallaghanCompartment`](https://lmjl-alea.github.io/midi/reference/CallaghanCompartment.md)
+- [`CallaghanCompartment`](https://tractoverse.github.io/midi/reference/CallaghanCompartment.md)
   : Callaghan's model for restricted diffusion in a cylinder
-- [`NeumanCompartment`](https://lmjl-alea.github.io/midi/reference/NeumanCompartment.md)
+- [`NeumanCompartment`](https://tractoverse.github.io/midi/reference/NeumanCompartment.md)
   : Neuman's model for restricted diffusion in a cylinder
-- [`SodermanCompartment`](https://lmjl-alea.github.io/midi/reference/SodermanCompartment.md)
+- [`SodermanCompartment`](https://tractoverse.github.io/midi/reference/SodermanCompartment.md)
   : Soderman's model for restricted diffusion in a cylinder
-- [`StaniszCompartment`](https://lmjl-alea.github.io/midi/reference/StaniszCompartment.md)
+- [`StaniszCompartment`](https://tractoverse.github.io/midi/reference/StaniszCompartment.md)
   : Stanisz's model for restricted diffusion in a cylinder
-- [`VanGelderenCompartment`](https://lmjl-alea.github.io/midi/reference/VanGelderenCompartment.md)
+- [`VanGelderenCompartment`](https://tractoverse.github.io/midi/reference/VanGelderenCompartment.md)
   : Van Gelderen's model for restricted diffusion in a cylinder
 
 ### Models for diffusion MRI
 
-- [`FreeCompartment`](https://lmjl-alea.github.io/midi/reference/FreeCompartment.md)
+- [`FreeCompartment`](https://tractoverse.github.io/midi/reference/FreeCompartment.md)
   : Free compartment class
-- [`SphereCompartment`](https://lmjl-alea.github.io/midi/reference/SphereCompartment.md)
+- [`SphereCompartment`](https://tractoverse.github.io/midi/reference/SphereCompartment.md)
   : Sphere compartment class
-- [`CylinderCompartment`](https://lmjl-alea.github.io/midi/reference/CylinderCompartment.md)
+- [`CylinderCompartment`](https://tractoverse.github.io/midi/reference/CylinderCompartment.md)
   : Cylinder compartment class
-- [`CylinderBundleCompartment`](https://lmjl-alea.github.io/midi/reference/CylinderBundleCompartment.md)
+- [`CylinderBundleCompartment`](https://tractoverse.github.io/midi/reference/CylinderBundleCompartment.md)
   : Cylinder bundle compartment class
 
 ## Statistical distributions
 
-- [`GammaDistribution`](https://lmjl-alea.github.io/midi/reference/GammaDistribution.md)
+- [`GammaDistribution`](https://tractoverse.github.io/midi/reference/GammaDistribution.md)
   : Gamma distribution class
-- [`WatsonDistribution`](https://lmjl-alea.github.io/midi/reference/WatsonDistribution.md)
+- [`WatsonDistribution`](https://tractoverse.github.io/midi/reference/WatsonDistribution.md)
   : Watson distribution class
 
 ## Utility functions
 
-- [`bvalue()`](https://lmjl-alea.github.io/midi/reference/bvalue.md) :
+- [`bvalue()`](https://tractoverse.github.io/midi/reference/bvalue.md) :
   B-Value Calculation
-- [`rcylinders()`](https://lmjl-alea.github.io/midi/reference/rcylinders.md)
+- [`rcylinders()`](https://tractoverse.github.io/midi/reference/rcylinders.md)
   : Sample cylinder compartments
-- [`run_app()`](https://lmjl-alea.github.io/midi/reference/run_app.md) :
-  Runs the MIDI Shiny web application
+- [`run_app()`](https://tractoverse.github.io/midi/reference/run_app.md)
+  : Runs the MIDI Shiny web application
 
