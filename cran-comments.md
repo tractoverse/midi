@@ -1,30 +1,27 @@
-## Resubmission
-
-This is a resubmission. In this version I have:
-
-* Expanded the `Description` field in the `DESCRIPTION` file to better describe 
-the package and its purpose;
-* Added references both to the `DESCRIPTION` file and the documentation of the
-classes;
-* Replaced the use of `dontrun{}` in the examples with `donttest{}` to avoid
-running the examples during the CRAN checks;
-* Added a `seed` option where necessary to avoid fixing the seed in the code.
-
 ## Test environments
-* local macOS R installation, R 4.3.3
-* continuous integration via GH actions:
-  * macOS latest release
-  * windows latest release
-  * ubuntu 20.04 latest release and devel
-* [win-builder](https://win-builder.r-project.org/) (release, devel and old-release)
-* [macbuilder](https://mac.r-project.org/macbuilder/)
-* [R-hub](https://builder.r-hub.io)
-  - Windows Server 2022, R-devel, 64 bit
-  - Ubuntu Linux 20.04.1 LTS, R-release, GCC
-  - Fedora Linux, R-devel, clang, gfortran
+
+**Local:**
+* macOS, R 4.7.0
+* macOS, R 4.6.0
+
+**Continuous integration via GitHub Actions (`R-CMD-check.yaml`):**
+* macOS latest, R release
+* Windows latest, R release
+* Ubuntu latest, R devel
+* Ubuntu latest, R release
+* Ubuntu latest, R oldrel-1
+
+**Win-builder:**
+* [win-builder](https://win-builder.r-project.org/) R release
+* [win-builder](https://win-builder.r-project.org/) R-devel
+
+**macbuilder:**
+* [mac-builder](https://mac.r-project.org/macbuilder/submit.html) R release
+* [mac-builder](https://mac.r-project.org/macbuilder/submit.html) R-devel
+
+**R-Hub**
+* All 34 available platforms except *rchk* since there is no C/C++ code.
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
-
-* This is a new release.
+0 errors | 0 warnings | 0 note
