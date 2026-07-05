@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">midi</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,23 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="development version" id="midi-development-version">midi (development version)<a class="anchor" aria-label="anchor" href="#midi-development-version"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.2.0" id="midi-020">midi 0.2.0<a class="anchor" aria-label="anchor" href="#midi-020"></a></h2>
+<div class="section level3">
+<h3 id="breaking-changes-0-2-0">Breaking changes<a class="anchor" aria-label="anchor" href="#breaking-changes-0-2-0"></a></h3>
+<ul><li><p>The unit system has changed from SI units (m, s, T/m) to μm, ms, and μT/μm throughout all compartment classes and helper functions.</p></li>
+<li><p><code>CylinderBundleCompartment$new()</code> no longer accepts <code>axis</code>, <code>radius</code>, <code>diffusivity</code>, <code>n_cylinders</code>, <code>axis_concentration</code>, <code>radius_sd</code>, <code>radial_model</code>, and <code>seed</code> arguments. It now accepts <code>cylinder_compartments</code>, a list of <code>CylinderCompartment</code> objects (typically produced by <code><a href="../reference/rcylinders.html">rcylinders()</a></code>), and infers axis, radius, and diffusivity statistics by fitting Watson and Gamma distributions to the provided compartments.</p></li>
+<li><p><code>CylinderCompartment$new()</code> no longer accepts <code>radius</code>, <code>diffusivity</code>, and <code>radial_model</code> arguments. It now accepts a <code>restricted_compartment</code> argument, an instance of a circularly-shaped compartment class (e.g., <code>VanGelderenCompartment$new()</code>).</p></li>
+</ul></div>
+<div class="section level3">
+<h3 id="new-features-0-2-0">New features<a class="anchor" aria-label="anchor" href="#new-features-0-2-0"></a></h3>
+<ul><li><p>New <code><a href="../reference/bvalue.html">bvalue()</a></code> function to compute the b-value from gradient pulse parameters.</p></li>
+<li><p>New <code>FreeCompartment</code> class to model free unconstrained diffusion.</p></li>
+<li><p>New <code>GammaDistribution</code> class providing <code>fit()</code>, <code>random()</code>, <code>get_mean()</code>, <code>get_variance()</code>, <code>get_shape()</code>, and <code>get_scale()</code> methods.</p></li>
+<li><p>New <code><a href="../reference/rcylinders.html">rcylinders()</a></code> function to sample a list of <code>CylinderCompartment</code> objects from Watson (axis) and Gamma (radius, diffusivity) distributions.</p></li>
+<li><p>New <code>SphereCompartment</code> class to model restricted diffusion in a sphere.</p></li>
+<li><p>New <code>WatsonDistribution</code> class providing <code>fit()</code>, <code>random()</code>, <code>get_axis()</code>, and <code>get_concentration()</code> methods.</p></li>
+<li><p>All compartment classes now expose <code>get_parameters()</code> and <code>get_parameter_names()</code> methods inherited from the new <code>BaseCompartment</code> base class.</p></li>
+</ul></div>
 </div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.1.0" id="midi-010">midi 0.1.0<a class="anchor" aria-label="anchor" href="#midi-010"></a></h2><p class="text-muted">CRAN release: 2024-04-03</p>
