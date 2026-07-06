@@ -35,5 +35,7 @@ reference:
 
 news:
   releases:
+  - text: "midi 0.2.0"
+    href: https://astamm.github.io/posts/2026-07-05-midi-020/
   - text: "midi 0.1.0"
     href: https://astamm.github.io/posts/2024-04-04-midi-010/
