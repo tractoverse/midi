@@ -2,6 +2,8 @@
 
 ## midi 0.2.0
 
+CRAN release: 2026-07-05
+
 ### Breaking changes
 
 - The unit system has changed from SI units (m, s, T/m) to μm, ms, and
