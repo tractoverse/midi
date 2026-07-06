@@ -1,5 +1,7 @@
 # Changelog
 
+## midi (development version)
+
 ## midi 0.2.0
 
 CRAN release: 2026-07-05
